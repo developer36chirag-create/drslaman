@@ -1,5 +1,5 @@
 import React from 'react';
-import './MegaMenu.css';
+import './Megamenu.css';
  
 const PHOTOS = [
   { src: 'https://images.unsplash.com/photo-1629909615032-7f3db83e9462?w=600&q=80', label: 'About the Practice' },
