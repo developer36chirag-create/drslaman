@@ -2,10 +2,10 @@ import React from 'react';
 import './Megamenu.css';
  
 const PHOTOS = [
-  { src: 'https://images.unsplash.com/photo-1629909615032-7f3db83e9462?w=600&q=80', label: 'About the Practice' },
-  { src: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80', label: 'Cosmetic Dentistry' },
-  { src: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80', label: 'Restorative Dentistry' },
-  { src: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80', label: 'General Dentistry' },
+  { src: '/jose-vazquez-4SUyx4KQ5Ik-unsplash\ \(1\).jpg', label: 'About the Practice' },
+  { src: '/photo-1606811841689-23dfddce3e95.jpg', label: 'Cosmetic Dentistry' },
+  { src: '/photo-1629909613654-28e377c37b09.jpg', label: 'Restorative Dentistry' },
+  { src: '/photo-1588776814546-1ffcf47267a5.jpg', label: 'General Dentistry' },
 ];
  
 const COLS = [

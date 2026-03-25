@@ -238,7 +238,11 @@ h1.hero-h1 em { font-style: italic; color: var(--c-terra); }
   overflow: hidden;
   background: var(--c-warm);
 }
-.dr-photo { background: url('/download.png') center top / cover no-repeat; }
+/* .dr-photo { background: url('/download.png') center top / cover no-repeat; } */
+
+.dr-photo img {
+  width: 100%;
+}
 .dr-copy { display: flex; flex-direction: column; justify-content: center; padding: 5rem; }
 .dr-quote {
   font-family: 'Cormorant Garamond', serif;
@@ -421,8 +425,12 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   overflow: hidden;
   background: var(--c-warm);
 }
-.dentist-image {
-  background: url('/image of the three doctors at the practice.jpg') center top / cover no-repeat;
+/* .dentist-image {
+  background: url('/practice-main.jpg') center top / cover no-repeat;
+} */
+
+.dentist-image img {
+  width: 100%;
 }
 .dentist-content { display: flex; flex-direction: column; justify-content: center; padding: 5rem; }
 
@@ -710,7 +718,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   height: 215px;
   border-radius: var(--radius-md);
   overflow: hidden;
-  background: url('/Dr. James Slaman DDS.png') center top / cover no-repeat;
+  /* background: url('/Dr. James Slaman DDS.png') center top / cover no-repeat; */
   border: 3px solid rgba(212,191,160,.38);
 }
 .dr-panel-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 400; color: var(--c-deep); margin-bottom: .3rem; }
@@ -880,4 +888,111 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
 
   /* Contact */
   .c-row { grid-template-columns: 1fr; }
+
+  .fp-item .fp-img {
+    order: -1;
+  }
+
+  .fp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .fp-copy {
+    padding: 2rem 1.5rem;
+  }
+}
+
+
+@media(max-width:767px) {
+  .hero-copy {
+    padding: 3.5rem 1.3rem;
+  }
+
+  .top-bar-left {
+    gap: 0.5rem;
+  }
+
+  .top-bar-left a {
+    font-size: .55rem;
+  }
+
+  .top-bar {
+    gap: 0.5rem;
+  }
+
+  .top-bar-right {
+    gap: 0.5rem;
+  }
+
+  .top-bar-right > a {
+    font-size: .55rem;
+  }
+
+  .hero-visual {
+        display: flex;
+    justify-content: center;
+  }
+
+  .hero-chip {
+    width: 90%;
+    left: unset;
+  }
+
+  .stat-block {
+    padding: 1.5rem 1.3rem;
+  }
+
+  .smile-copy {
+    padding: 3.5rem 1.3rem;
+  }
+
+  .convenient-section {
+    padding: 3.5rem 1.3rem;
+  }
+
+  .convenient-cta {
+    padding: 2rem;
+    align-items: flex-start;
+  }
+
+  .dr-copy {
+    padding: 3.5rem 1.3rem;
+  }
+
+  .fp-header {
+    padding: 0px;
+    margin-bottom: 3rem;
+  }
+
+  .dentist-content {
+    padding: 3.5rem 1.3rem;
+  }
+
+
+  .at-card-body {
+    padding: 2rem;
+  }
+
+  .tour-inner {
+    padding: 3.5rem 1.3rem;
+  }
+
+  .dr-panel-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dr-panel {
+    padding: 3.5rem 1.3rem;
+    gap: 2rem;
+  }
+
+  .office-copy {
+    padding: 3.5rem 1.3rem;
+  }
+  
+
+
 }

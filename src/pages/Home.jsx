@@ -418,7 +418,9 @@ export default function Home() {
           DR. JAMES SLAMAN — FEATURE
       ══════════════════════════════════ */}
       <section id="about" className="dr-feature">
-        <div className="dr-photo" />
+        <div className="dr-photo">
+          <img src="/download-main.png" alt="" />
+        </div>
         <div className="dr-copy">
           <p className="sec-tag">Meet Your Doctor</p>
           <h2 className="sec-h">Dr. James Slaman —<br /><em>Is That Enough?</em></h2>
@@ -578,7 +580,9 @@ export default function Home() {
           CHOOSE THE BEST DENTIST — SPLIT
       ══════════════════════════════════ */}
       <section className="dentist-section">
-        <div className="dentist-image" />
+        <div className="dentist-image">
+          <img src="/practice-main.jpg" alt="" />
+        </div>
         <div className="dentist-content">
           <p className="sec-tag">Meet Your Doctor</p>
           <h2 className="sec-h">Choose the Best Cosmetic Dentist in<br /><em>Albuquerque, New Mexico</em></h2>
@@ -738,7 +742,9 @@ export default function Home() {
           DR PANEL — ABOUT
       ══════════════════════════════════ */}
       <div className="dr-panel">
-        <div className="dr-panel-img" />
+        <div className="dr-panel-img">
+          <img src="/Dr. James Slaman DDS.png" alt="" />
+        </div>
         <div className="dr-panel-body">
           <p className="sec-tag">About the Doctor</p>
           <h2>James Slaman, DDS, PC</h2>
