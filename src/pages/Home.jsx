@@ -40,28 +40,28 @@ const TESTIMONIALS_4 = [
 const PROCEDURES = [
   {
     num: '01', tag: 'Permanent Restoration', name: 'Dental', nameEm: 'Implants',
-    img: '/Images/Dental Implants.png',
+    img: '/Dental Implants.png',
     body1: "Losing teeth not only affects the function and form of your smile but your overall health as well. Without teeth, the lack of natural tooth roots causes your jawbone to shrink, making your face look sunken and aged. Dental implants, which are strong titanium posts surgically anchored into your jaw, are the only dental care treatment that can not only stop jaw bone atrophy but reverse it.",
     body2: "Implants help keep your jawbone healthy and strong. They're the most secure method of supporting dental restorations like crowns, bridges, and dentures. Dr. Slaman performs all implant surgeries himself in his Albuquerque practice instead of sending our guests to another dentist.",
     cta: 'Explore Dental Implants',
   },
   {
     num: '02', tag: 'Cosmetic Transformation', name: 'Smile', nameEm: 'Makeover',
-    img: '/Images/Smile Makeover.png',
+    img: '/Smile Makeover.png',
     body1: "Dr. Slaman creates personalized treatments at his Albuquerque cosmetic dentistry office designed to rejuvenate your smile. If extensive restoration is needed, you'll probably need more than one visit to achieve the smile of your dreams. Dr. Slaman may recommend dental procedures such as teeth whitening, veneers, dental bonding, and laser gum contouring, keeping in mind your schedule and budget.",
     body2: "Dr. Slaman is a forward-thinking dentist who is constantly researching the latest technological advances in dentistry. He now uses state-of-the-art cosmetic dental imaging to provide you with a preview of how your new smile will look like.",
     cta: 'Explore Smile Makeovers',
   },
   {
     num: '03', tag: 'Restorative Care', name: 'Dental', nameEm: 'Crowns',
-    img: '/Images/Dental Crowns.png',
+    img: '/Dental Crowns.png',
     body1: "Broken, cracked, decayed, or weakened teeth can make eating, drinking, or speaking painful and difficult. A dental crown can restore the function and form of your compromised teeth and prevent the need for extraction in the future.",
     body2: "You may be able to receive your crown during one visit thanks to our in-office CEREC® system, which creates natural-looking dental crowns while you relax in our comfortable Albuquerque, NM dental office.",
     cta: 'Explore Dental Crowns',
   },
   {
     num: '04', tag: 'Sleep & Wellness', name: 'Sleep Apnea', nameEm: 'Treatment',
-    img: '/Images/Sleep Apnea Treatment.png',
+    img: '/Sleep Apnea Treatment.png',
     body1: "If you wake up gasping for air when you sleep, you could have sleep apnea. Interrupted sleep causes concentration, mood, and overall health to suffer. Your bed partner's health could be disturbed as well. Sleep apnea can lead to serious health problems like depression, hypertension, and heart disease if left untreated.",
     body2: "Can a dentist really help you sleep better? Absolutely. Dr. Slaman can provide you with a custom-made, non-surgical appliance that fits comfortably over your teeth during sleep. It opens your airways to keep oxygen flowing as you breathe.",
     cta: 'Sleep Apnea Treatment',
@@ -70,25 +70,25 @@ const PROCEDURES = [
 
 const TECH_CARDS = [
   {
-    img: '/Images/Digital X-Rays.png', badge: 'Technology 01', tag: 'Imaging',
+    img: '/Digital X-Rays.png', badge: 'Technology 01', tag: 'Imaging',
     name: 'Digital', nameEm: 'X-Rays',
     desc: "Our dentistry practice uses digital x-rays due to the advantages offered over conventional imaging techniques. Digital x-ray processing takes less time and allows images to be enhanced instantly. This exposes patients to less radiation. The detailed clarity allows Dr. Slaman to quickly review your x-rays and make a diagnosis.",
     pills: ['90% Less Radiation', 'Instant Results', 'Enhanced Clarity'],
   },
   {
-    img: '/Images/Orthophos SL.png', badge: 'Technology 02', tag: '3D Imaging',
+    img: '/Orthophos SL.png', badge: 'Technology 02', tag: '3D Imaging',
     name: 'Orthophos', nameEm: 'SL',
     desc: "The Orthophos SL imaging device produces 3-D images of your teeth, soft tissues, nerve pathways, and bone in a single scan. This incredible machine allows Dr. Slaman to evaluate any number of potential dental diseases or other issues such as jawbone recession.",
     pills: ['Full 3D Scan', 'Implant Planning', 'Single Scan'],
   },
   {
-    img: '/Images/DIAGNOdent.png', badge: 'Technology 03', tag: 'Early Detection',
+    img: '/DIAGNOdent.png', badge: 'Technology 03', tag: 'Early Detection',
     name: 'DIAGNO', nameEm: 'dent',
     desc: "A highly trained dentist like Dr. Slaman knows the key to effective dental treatments is early detection. DIAGNOdent uses laser fluorescence to detect a small cavity inside a tooth before it becomes a large cavity. This advanced dental technology is much more precise than visual inspections or x-rays.",
     pills: ['Laser Fluorescence', 'Early Detection', 'Non-Invasive'],
   },
   {
-    img: '/Images/Sirona Primescan.png', badge: 'Technology 04', tag: 'Intraoral Scanning',
+    img: '/Sirona Primescan.png', badge: 'Technology 04', tag: 'Intraoral Scanning',
     name: 'Sirona', nameEm: 'Primescan',
     desc: "The cutting-edge Sirona Primescan intra-oral scanning system provides dentists the ability to offer patients a number of treatment options including same-day restorations and sleep apnea therapy. Traditional dental restorations are often uncomfortable, involve messy impressions, and can take weeks and multiple office visits to complete.",
     pills: ['Same-Day Crowns', 'No Impressions', 'Digital Workflow'],
@@ -389,11 +389,11 @@ export default function Home() {
         </div>
         <div className="ba-grid">
           <div className="ba-card sr">
-            <div className="ba-img"><img src="/Images/before and after of porcelain veneers.png" alt="Porcelain Veneers" /></div>
+            <div className="ba-img"><img src="/before and after of porcelain veneers.png" alt="Porcelain Veneers" /></div>
             <div className="ba-info"><div className="ba-title">Porcelain Veneers</div></div>
           </div>
           <div className="ba-card sr">
-            <div className="ba-img"><img src="/Images/before and after of Dental Bonding.png" alt="Dental Bonding" /></div>
+            <div className="ba-img"><img src="/before and after of Dental Bonding.png" alt="Dental Bonding" /></div>
             <div className="ba-info"><div className="ba-title">Dental Bonding</div></div>
           </div>
         </div>
@@ -407,8 +407,8 @@ export default function Home() {
           eyebrow="Patient Experience"
           title="Top-Notch"
           titleEm="Dental Care"
-          poster="/Images/original.jpg"
-          src="/Images/Practice_Overview.mp4"
+          poster="/original.jpg"
+          src="/Practice_Overview.mp4"
           description="In this video, Dr. James Slaman and his patients discuss the goals of the practice and their experiences. Our team educates patients on oral health and treatment options so they receive the best care possible."
           btnLabel="Visit Our Video Gallery"
         />
@@ -567,8 +567,8 @@ export default function Home() {
           eyebrow="She Recommends Dr. Slaman:"
           title="A Happy Patient"
           titleEm="Explains Why"
-          poster="/Images/A Happy Patient Explains Why.jpg"
-          src="/Images/Testimonial_Francoise_Barnes.mp4"
+          poster="/A Happy Patient Explains Why.jpg"
+          src="/Testimonial_Francoise_Barnes.mp4"
           description="Francoise explains that she was facing several oral health issues and was dissatisfied with her former dentist's care. She found Dr. James Slaman, who proved to be an excellent listener and a skilled dentist with a comfortable office and friendly staff. Francoise says that under Dr. Slaman's care, she now feels healthier and more confident."
           btnLabel="View More Testimonials"
         />

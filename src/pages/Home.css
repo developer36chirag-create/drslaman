@@ -66,7 +66,7 @@ h1.hero-h1 em { font-style: italic; color: var(--c-terra); }
 .hero-photo {
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1000&q=80') center/cover no-repeat;
+  background: url('/photo-1606811841689-23dfddce3e95.jpg') center/cover no-repeat;
 }
 .hero-photo::after {
   content: '';
@@ -112,7 +112,7 @@ h1.hero-h1 em { font-style: italic; color: var(--c-terra); }
 ══════════════════════════════════════════════ */
 .smile-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 68vh; overflow: hidden; }
 .smile-photo {
-  background: url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&q=80') center/cover no-repeat;
+  background: url('/photo-1588776814546-1ffcf47267a5.jpg') center/cover no-repeat;
   position: relative;
 }
 .smile-photo::after {
@@ -238,7 +238,7 @@ h1.hero-h1 em { font-style: italic; color: var(--c-terra); }
   overflow: hidden;
   background: var(--c-warm);
 }
-.dr-photo { background: url('/Images/download.png') center top / cover no-repeat; }
+.dr-photo { background: url('/download.png') center top / cover no-repeat; }
 .dr-copy { display: flex; flex-direction: column; justify-content: center; padding: 5rem; }
 .dr-quote {
   font-family: 'Cormorant Garamond', serif;
@@ -422,7 +422,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   background: var(--c-warm);
 }
 .dentist-image {
-  background: url('/Images/image of the three doctors at the practice.jpg') center top / cover no-repeat;
+  background: url('/image of the three doctors at the practice.jpg') center top / cover no-repeat;
 }
 .dentist-content { display: flex; flex-direction: column; justify-content: center; padding: 5rem; }
 
@@ -447,7 +447,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   position: absolute;
   inset: 0;
   opacity: 0.035;
-  background-image: url('/Images/rs-grain.svg');
+  background-image: url('/rs-grain.svg');
   background-size: 200px;
   pointer-events: none;
 }
@@ -660,7 +660,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
 .tour-bg {
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1400&q=80') center/cover no-repeat;
+  background: url('/photo-1629909613654-28e377c37b09.jpg') center/cover no-repeat;
 }
 .tour-bg::after { content: ''; position: absolute; inset: 0; background: rgba(20,13,9,.65); }
 .tour-inner { position: relative; z-index: 1; text-align: center; padding: 3rem 2rem; max-width: 640px; }
@@ -710,7 +710,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   height: 215px;
   border-radius: var(--radius-md);
   overflow: hidden;
-  background: url('/Images/Dr. James Slaman DDS.png') center top / cover no-repeat;
+  background: url('/Dr. James Slaman DDS.png') center top / cover no-repeat;
   border: 3px solid rgba(212,191,160,.38);
 }
 .dr-panel-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 400; color: var(--c-deep); margin-bottom: .3rem; }
@@ -750,7 +750,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
 .o-btn.ghost { color: var(--c-cream); border: 1px solid rgba(245,240,232,.22); }
 .o-btn.ghost:hover { border-color: var(--c-sand); color: var(--c-sand); }
 .office-map {
-  background: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=900&q=80') center/cover no-repeat;
+  background: url('/photo-1524661135-423995f22d0b.jpg') center/cover no-repeat;
   position: relative;
 }
 .office-map::after { content: ''; position: absolute; inset: 0; background: rgba(28,20,16,.1); }
@@ -769,7 +769,6 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
 .contact-bg {
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1499856374978-e44440ddda41?w=1400&q=80') center/cover no-repeat;
 }
 .contact-bg::after { content: ''; position: absolute; inset: 0; background: rgba(28,20,16,.72); }
 .contact-inner { position: relative; z-index: 1; width: 100%; max-width: 680px; padding: 4rem 2rem; text-align: center; }
