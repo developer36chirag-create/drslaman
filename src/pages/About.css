@@ -9,7 +9,7 @@
 .ab-banner-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 90vh;
+  /* min-height: 90vh; */
   overflow: hidden;
   padding-top: 105px; /* topbar 43px + navbar 62px */
 }
@@ -1133,9 +1133,47 @@
     height: auto;
   }
 
+
+  .ab-banner-body {
+    max-width: 100%;
+  }
+
+  .ab-visit-header {
+        gap: 1rem;
+margin-bottom: 2rem;
+  }
+
+.ab-technology-header {
+        gap: 1rem;
+        margin-bottom: 2rem;
+  }
+
+  .ab-team-header {
+        gap: 1rem;
+        margin-bottom: 2rem;
+  }
+
+  
+.ab-practice-layout {
+    gap: 3rem;
+}
+
+.ab-practice-deco {
+    right: -0.5rem;
+}
+
 }
 
 @media (max-width: 767px) {
+
+    .ab-practice-deco {
+    right: -0.5rem;
+}
+
+    .ab-practice-layout {
+    gap: 3rem;
+}
+
   .ab-technology-grid,
   .ab-team-grid,
   .ab-visit-grid {

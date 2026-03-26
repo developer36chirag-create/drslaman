@@ -169,7 +169,7 @@ export default function Doctor() {
             With <em>Dr. James Slaman</em><br />
             <span className="dr-hero-sub">DDS, PC — Albuquerque, NM</span>
           </h1>
-          <p className="sec-body" style={{ maxWidth: '46ch', marginTop: '1rem' }}>
+          <p className="sec-body" style={{ marginTop: '1rem' }}>
             A cosmetic dentist, community leader, and lifelong Albuquerque native who has been
             crafting beautiful, healthy smiles since 1992.
           </p>
@@ -265,7 +265,7 @@ export default function Doctor() {
             Why Dr. Slaman<br />
             <em style={{ color: 'var(--c-sand)' }}>Became a Dentist</em>
           </h2>
-          <p className="sec-body" style={{ color: 'rgba(245,240,232,.58)', maxWidth: '48ch' }}>
+          <p className="sec-body" style={{ color: 'rgba(245,240,232,.58)' }}>
             Dr. Slaman needed orthodontics as a child and teenager, so he spent a lot of time with
             dental professionals. He wanted to help his community in the same way these dentists
             helped him. Dr. Slaman remembers always feeling comfortable while at the dentist's

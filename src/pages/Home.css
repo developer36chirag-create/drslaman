@@ -592,7 +592,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   transition: transform .6s ease, filter .5s ease;
   filter: drop-shadow(0 8px 24px rgba(28,20,16,.12));
 }
-.at-card:nth-child(1) .at-card-img img { object-fit: cover; padding: 0; filter: brightness(.95) saturate(.88); }
+.at-card:nth-child(1) .at-card-img img { object-fit: cover; filter: brightness(.95) saturate(.88); }
 .at-card:hover .at-card-img img { transform: scale(1.04); }
 .at-card:nth-child(1):hover .at-card-img img { filter: brightness(1) saturate(1); }
 
@@ -768,7 +768,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
 ══════════════════════════════════════════════ */
 .contact-wrap {
   position: relative;
-  min-height: 70vh;
+  /* min-height: 70vh; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -822,7 +822,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
 
   /* Convenient */
   .convenient-section { padding: 3rem 2.5rem; }
-  .convenient-cta { flex-direction: column; gap: 20px; }
+  .convenient-cta { flex-direction: column; gap: 20px; align-items: flex-start; }
 
   /* Testimonials */
   .testimonials__grid { grid-template-columns: 1fr; }
@@ -902,6 +902,13 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   .fp-copy {
     padding: 2rem 1.5rem;
   }
+
+
+  .hero-lead {
+    max-width: 100%;
+  }
+
+
 }
 
 

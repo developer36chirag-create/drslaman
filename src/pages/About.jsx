@@ -249,7 +249,7 @@ export default function About() {
           <h2 className="sec-h" style={{ color: '#fff' }}>
             Meet Dr.<br /><em style={{ color: 'var(--c-sand)' }}>Slaman</em>
           </h2>
-          <p className="sec-body" style={{ color: 'rgba(245,240,232,.58)', maxWidth: '50ch' }}>
+          <p className="sec-body" style={{ color: 'rgba(245,240,232,.58)' }}>
             <strong style={{ color: 'rgba(245,240,232,.8)' }}>Dr. James Slaman</strong> developed
             an early interest in dentistry while growing up in Albuquerque. Today, he's one of the
             most experienced and educated dentists in our community, having{' '}
@@ -479,7 +479,7 @@ export default function About() {
           <h2 className="sec-h" style={{ color: '#fff' }}>
             Cosmetic, General &amp;<br /><em style={{ color: 'var(--c-sand)' }}>Restorative Dentistry</em>
           </h2>
-          <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)', maxWidth: '50ch' }}>
+          <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)' }}>
             Dr. James Slaman specializes in cosmetic dentistry and offers a full selection of
             general and restorative treatments. To request an appointment at our Albuquerque, NM,
             dental office, contact us online or call{' '}
