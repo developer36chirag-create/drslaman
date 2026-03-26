@@ -1,5 +1,6 @@
 import React from 'react';
 import './Megamenu.css';
+import { Link } from "react-router-dom";
  
 const PHOTOS = [
   { src: '/jose-vazquez-4SUyx4KQ5Ik-unsplash\ \(1\).jpg', label: 'About the Practice' },
@@ -12,8 +13,8 @@ const COLS = [
   {
     title: 'About the Practice',
     links: [
-      { label: 'About the Practice', href: '#' },
-      { label: 'James Slaman, DDS, PC', href: '#' },
+      { label: 'About the Practice', href: '/about' },
+      { label: 'James Slaman, DDS, PC', href: '/doctor' },
       { label: 'Albuquerque Office', href: '#office' },
       { label: 'Patient Forms', href: '#' },
       { label: 'Testimonials', href: '#reviews' },

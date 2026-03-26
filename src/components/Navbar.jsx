@@ -18,7 +18,7 @@ export default function Navbar() {
         <a href="#reviews">Reviews</a>
       </div>
  
-      <a href="#" className="nav-logo">
+      <a href="/" className="nav-logo">
         <span className="nav-logo-mark">James Slaman</span>
         <span className="nav-logo-sub">DDS, PC · Albuquerque, NM</span>
       </a>
