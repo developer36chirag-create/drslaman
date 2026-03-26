@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className={scrolled ? 'scrolled' : ''}>
       <div className="nav-left">
         <a href="#services">Services</a>
-        <a href="#about">About</a>
+        <a href="/about">About</a>
         <a href="#reviews">Reviews</a>
       </div>
  

@@ -1,0 +1,1203 @@
+/* ══════════════════════════════════════════════
+   ABOUT PAGE — all classes prefixed with ab-
+   Shared utilities (sec-tag, sec-h, sec-body,
+   btn, btn-fill, btn-line, sr, sr-left,
+   sr-right, .visible) come from index.css
+══════════════════════════════════════════════ */
+
+/* ── S1 BANNER / HERO ─────────────────────── */
+.ab-banner-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+  overflow: hidden;
+  padding-top: 105px; /* topbar 43px + navbar 62px */
+}
+
+.ab-banner-left {
+  padding: 6rem 5rem 6rem 6rem;
+  background: var(--c-warm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ab-banner-left::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(160,89,58,.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ab-banner-left::after {
+  content: '';
+  pointer-events: none;
+  background: radial-gradient(at 20% 70%, rgba(160,89,58,.06) 0%, transparent 65%);
+  position: absolute;
+  inset: 0;
+}
+
+.ab-banner-eyebrow {
+  font-size: .68rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--c-terra);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.ab-banner-eyebrow::before {
+  content: '';
+  width: 2rem;
+  height: 1px;
+  background: var(--c-terra);
+  display: inline-block;
+}
+
+.ab-banner-h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 4.8vw, 5rem);
+  font-weight: 300;
+  color: var(--c-deep);
+  line-height: 1.08;
+  letter-spacing: .01em;
+}
+
+.ab-banner-h1 em {
+  font-style: italic;
+  color: var(--c-terra);
+}
+
+.ab-banner-body {
+  font-size: .9rem;
+  line-height: 1.78;
+  color: var(--c-muted);
+  max-width: 50ch;
+}
+
+.ab-banner-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
+
+.ab-banner-badge {
+  background: rgba(0,0,0,.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 2rem;
+  padding: .4rem 1rem;
+  font-size: .62rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.ab-banner-badge i {
+  color: var(--c-terra);
+  font-style: normal;
+}
+
+.ab-banner-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ab-banner-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.ab-banner-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(.78) saturate(.9);
+  display: block;
+}
+
+.ab-banner-year {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  background: var(--c-terra);
+  color: #fff;
+  padding: .5rem 1rem;
+  font-size: .62rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.ab-banner-chip {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2rem;
+  background: rgba(26,14,8,.88);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(212,191,160,.18);
+  border-radius: var(--radius-md);
+  padding: 1.2rem 1.5rem;
+  max-width: 260px;
+  z-index: 2;
+}
+
+.ab-banner-chip strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  color: rgba(245,240,232,.9);
+  display: block;
+  margin-bottom: .3rem;
+}
+
+.ab-banner-chip span {
+  font-size: .72rem;
+  color: rgba(245,240,232,.45);
+  line-height: 1.6;
+}
+
+/* ── S2 PRACTICE VIDEO ────────────────────── */
+.ab-practice-section {
+  background: var(--c-warm);
+  padding: 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ab-practice-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--c-terra), var(--c-sand), var(--c-terra), transparent);
+}
+
+.ab-practice-header {
+  max-width: 600px;
+  margin-bottom: 3.5rem;
+}
+
+.ab-practice-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.ab-practice-video-wrap {
+  position: relative;
+}
+
+.ab-practice-frame {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(212,191,160,.25);
+  box-shadow: 0 24px 72px rgba(28,14,8,.18);
+}
+
+.ab-practice-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ab-practice-deco {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 1px solid rgba(212,191,160,.2);
+  background: var(--c-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  box-shadow: 0 8px 32px rgba(28,14,8,.1);
+  z-index: 2;
+    padding: 20px;
+    gap: 10px;
+}
+
+.ab-practice-deco strong {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--c-rust);
+  line-height: 1;
+}
+
+.ab-practice-deco span {
+  font-size: .5rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  text-align: center;
+}
+
+.ab-practice-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* ── S3 VISIT EXPECTATIONS ────────────────── */
+.ab-visit-section {
+  padding: 6rem;
+  background: var(--c-cream);
+}
+
+.ab-visit-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: end;
+  margin-bottom: 4rem;
+}
+
+.ab-visit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid rgba(212,191,160,.2);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.ab-visit-card {
+  padding: 2.4rem 2rem;
+  background: #fff;
+  border-right: 1px solid rgba(212,191,160,.15);
+  border-bottom: 1px solid rgba(212,191,160,.15);
+  position: relative;
+  overflow: hidden;
+  transition: background .3s;
+}
+
+.ab-visit-card:nth-child(3n) {
+  border-right: none;
+}
+
+.ab-visit-card:nth-child(4),
+.ab-visit-card:nth-child(5),
+.ab-visit-card:nth-child(6) {
+  border-bottom: none;
+}
+
+.ab-visit-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--c-terra), var(--c-sand));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .35s ease;
+}
+
+.ab-visit-card:hover {
+  background: var(--c-warm);
+}
+
+.ab-visit-card:hover::after {
+  transform: scaleX(1);
+}
+
+.ab-visit-ico {
+  width: 52px;
+  height: 52px;
+  border-radius: .6rem;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(135deg, rgba(160,89,58,.1), rgba(212,191,160,.1));
+  border: 1px solid rgba(212,191,160,.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.ab-visit-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--c-deep);
+  margin-bottom: .5rem;
+  letter-spacing: .02em;
+}
+
+.ab-visit-card p {
+  font-size: .82rem;
+  line-height: 1.75;
+  color: var(--c-muted);
+}
+
+/* ── S4 MEET DR. SLAMAN ───────────────────── */
+.ab-about-section {
+  background: var(--c-deep);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ab-about-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 60%, rgba(160,89,58,.12) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ab-about-photo {
+  position: relative;
+  overflow: hidden;
+  /* background: url('/download-main.png') center top / cover no-repeat; */
+}
+
+.ab-about-photo img {
+    width: 100%;
+}
+
+.ab-about-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent 40%, rgba(28,14,8,.65) 100%);
+}
+
+.ab-about-badge {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  z-index: 2;
+  background: rgba(26,14,8,.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212,191,160,.2);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.4rem;
+}
+
+.ab-about-badge strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: rgba(245,240,232,.9);
+  display: block;
+}
+
+.ab-about-badge span {
+  font-size: .62rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--c-sand);
+}
+
+.ab-about-copy {
+  padding: 5.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ab-about-quote {
+  border-left: 3px solid var(--c-terra);
+  padding: 1rem 1.4rem;
+  background: rgba(255,255,255,.04);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.ab-about-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: rgba(245,240,232,.8);
+  line-height: 1.6;
+}
+
+.ab-about-quote cite {
+  font-size: .62rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--c-sand);
+  margin-top: .5rem;
+  display: block;
+}
+
+.ab-about-mems-label {
+  font-size: .6rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--c-terra);
+  font-weight: 600;
+  margin-bottom: .7rem;
+}
+
+.ab-about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.ab-about-tag {
+  font-size: .62rem;
+  letter-spacing: .06em;
+  border: 1px solid rgba(212,191,160,.18);
+  color: rgba(245,240,232,.5);
+  border-radius: 2rem;
+  padding: .3rem .9rem;
+  transition: all .2s;
+}
+
+.ab-about-tag:hover {
+  border-color: var(--c-terra);
+  color: rgba(245,240,232,.9);
+}
+
+.ab-about-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-ghost-light {
+  border: 1.5px solid rgba(212,191,160,.3);
+  color: rgba(245,240,232,.55);
+  border-radius: 3rem;
+  padding: .78rem 2rem;
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all .22s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.btn-ghost-light:hover {
+  border-color: var(--c-sand);
+  color: rgba(245,240,232,.9);
+}
+
+/* ── S5 AFFILIATIONS BAR ──────────────────── */
+.ab-affiliations-section {
+  padding: 3.5rem 6rem;
+  background: var(--c-warm);
+  border-top: 1px solid rgba(212,191,160,.15);
+  border-bottom: 1px solid rgba(212,191,160,.15);
+}
+
+.ab-affiliations-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.ab-affiliations-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--c-rust);
+  flex-shrink: 0;
+}
+
+.ab-affiliations-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.ab-affiliations-pill {
+  padding: .5rem 3rem;
+  font-size: .62rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  border-right: 1px solid rgba(212,191,160,.25);
+  font-weight: 500;
+  transition: color .2s;
+}
+
+.ab-affiliations-pill:last-child {
+  border-right: none;
+}
+
+.ab-affiliations-pill:hover {
+  color: var(--c-terra);
+}
+
+.ab-affiliations-pill img {
+    height: 90px;
+    width: auto;
+        object-fit: contain;
+}
+
+/* ── S6 TESTIMONIALS ──────────────────────── */
+.ab-reviews-section {
+  padding: 6rem;
+  background: var(--c-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.ab-reviews-section::before {
+  content: '"';
+  position: absolute;
+  top: -2rem;
+  right: 4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22rem;
+  font-weight: 700;
+  color: rgba(212,191,160,.07);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+}
+
+.ab-reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ab-reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ab-reviews-card {
+  background: #fff;
+  border: 1px solid rgba(212,191,160,.2);
+  border-radius: var(--radius-md);
+  padding: 2.4rem 2.2rem;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .3s, transform .3s;
+}
+
+.ab-reviews-card:hover {
+  box-shadow: 0 12px 48px rgba(28,14,8,.08);
+  transform: translateY(-3px);
+}
+
+.ab-reviews-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: var(--c-terra);
+  transition: height .4s ease;
+}
+
+.ab-reviews-card:hover::before {
+  height: 100%;
+}
+
+.ab-reviews-stars {
+  color: var(--c-terra);
+  font-size: .9rem;
+  letter-spacing: .1em;
+  margin-bottom: 1rem;
+}
+
+.ab-reviews-text {
+  font-size: .88rem;
+  line-height: 1.85;
+  color: var(--c-muted);
+  font-style: italic;
+  margin-bottom: 1.4rem;
+}
+
+.ab-reviews-person {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+}
+
+.ab-reviews-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(160,89,58,.2), rgba(212,191,160,.3));
+  border: 1px solid rgba(212,191,160,.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c-rust);
+  flex-shrink: 0;
+}
+
+.ab-reviews-name {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--c-deep);
+}
+
+.ab-reviews-loc {
+  font-size: .68rem;
+  color: rgba(107,90,80,.5);
+  margin-top: .1rem;
+}
+
+.ab-reviews-via {
+  margin-left: auto;
+  font-size: .58rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--c-terra);
+  font-weight: 600;
+  border: 1px solid rgba(160,89,58,.2);
+  border-radius: 2rem;
+  padding: .25rem .7rem;
+}
+
+/* ── S7 TECHNOLOGY ────────────────────────── */
+.ab-technology-section {
+  background: var(--c-deep);
+  padding: 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ab-technology-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 30%, rgba(122,59,30,.15) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.ab-technology-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: end;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ab-technology-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(212,191,160,.07);
+  border: 1px solid rgba(212,191,160,.07);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.ab-technology-item {
+  background: rgba(26,14,8,.65);
+  padding: 2rem 1.6rem;
+  position: relative;
+  overflow: hidden;
+  transition: background .3s;
+}
+
+.ab-technology-item:hover {
+  background: rgba(40,22,12,.9);
+}
+
+.ab-technology-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--c-terra), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s;
+}
+
+.ab-technology-item:hover::before {
+  transform: scaleX(1);
+}
+
+.ab-technology-num {
+  font-size: .58rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--c-terra);
+  font-weight: 600;
+  margin-bottom: .8rem;
+}
+
+.ab-technology-item h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: rgba(245,240,232,.88);
+  margin-bottom: .6rem;
+  line-height: 1.3;
+}
+
+.ab-technology-item p {
+  font-size: .75rem;
+  color: rgba(245,240,232,.42);
+  line-height: 1.7;
+}
+
+/* ── S8 TREATMENTS ────────────────────────── */
+.ab-treatments-section {
+  background: var(--c-warm);
+  padding: 6rem;
+}
+
+.ab-treatments-header {
+  margin-bottom: 3.5rem;
+}
+
+.ab-treatments-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.ab-treatments-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(212,191,160,.25);
+  background: var(--c-cream);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .3s, transform .3s;
+}
+
+.ab-treatments-card:hover {
+  box-shadow: 0 16px 56px rgba(28,14,8,.12);
+  transform: translateY(-4px);
+}
+
+.ab-treatments-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ab-treatments-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(.78) saturate(.85);
+  transition: transform .5s ease, filter .5s ease;
+  display: block;
+}
+
+.ab-treatments-card:hover .ab-treatments-img img {
+  transform: scale(1.05);
+  filter: brightness(.88) saturate(1);
+}
+
+.ab-treatments-img-label {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  background: rgba(26,14,8,.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212,191,160,.15);
+  border-radius: 2rem;
+  padding: .3rem .9rem;
+  font-size: .6rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: rgba(245,240,232,.7);
+}
+
+.ab-treatments-body {
+  padding: 2rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  flex: 1;
+}
+
+.ab-treatments-body h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--c-deep);
+}
+
+.ab-treatments-body p {
+  font-size: .87rem;
+  line-height: 1.8;
+  color: var(--c-muted);
+  flex: 1;
+}
+
+/* ── S9 TEAM ──────────────────────────────── */
+.ab-team-section {
+  padding: 6rem;
+  background: var(--c-cream);
+}
+
+.ab-team-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: end;
+  margin-bottom: 4rem;
+}
+
+.ab-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.ab-team-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--c-warm);
+  border: 1px solid rgba(212,191,160,.2);
+  aspect-ratio: 3 / 4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: box-shadow .3s, transform .3s;
+}
+
+.ab-team-card:hover {
+  box-shadow: 0 16px 48px rgba(28,14,8,.12);
+  transform: translateY(-4px);
+}
+
+.ab-team-bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ab-team-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(212,191,160,.35), rgba(160,89,58,.25));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--c-rust);
+}
+
+.ab-team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ab-team-info {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(28,14,8,.85) 0%, transparent 100%);
+  padding: 1.4rem 1.2rem;
+}
+
+.ab-team-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(245,240,232,.95);
+}
+
+.ab-team-role {
+  font-size: .6rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--c-sand);
+  margin-top: .2rem;
+}
+
+.ab-team-card.featured {
+  background: linear-gradient(135deg, var(--c-terra), var(--c-rust));
+  border: none;
+}
+
+.ab-team-card.featured .ab-team-avatar {
+  background: rgba(255,255,255,.15);
+  border-color: rgba(255,255,255,.3);
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+/* ── S10 BIO / MEMBERSHIPS ────────────────── */
+.ab-dentistry-section {
+  background: var(--c-deep);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.ab-dentistry-photo {
+  position: relative;
+  overflow: hidden;
+  background: url('https://images.unsplash.com/photo-1629909615184-74f495363b67?w=900&q=80') center / cover no-repeat;
+}
+
+.ab-dentistry-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(28,14,8,.2) 0%, rgba(28,14,8,.65) 100%);
+}
+
+.ab-dentistry-copy {
+  padding: 5.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ab-dentistry-mems p {
+  font-size: .6rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--c-terra);
+  font-weight: 600;
+  margin-bottom: .8rem;
+}
+
+.ab-dentistry-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.ab-dentistry-list li {
+  font-size: .82rem;
+  color: rgba(245,240,232,.55);
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.ab-dentistry-list li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--c-terra);
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media (max-width: 1100px) {
+  .ab-banner-section,
+  .ab-about-section,
+  .ab-dentistry-section {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-banner-left {
+    padding: 3rem 2rem;
+  }
+
+  .ab-banner-right {
+    height: 55vw;
+        display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .ab-banner-chip {
+    bottom: 2.5rem;
+    right: unset;
+    left: 2rem;
+  }
+  
+  .ab-about-photo,
+  .ab-dentistry-photo {
+    min-height: 360px;
+  }
+
+  .ab-practice-section,
+  .ab-visit-section,
+  .ab-affiliations-section,
+  .ab-reviews-section,
+  .ab-technology-section,
+  .ab-treatments-section,
+  .ab-team-section {
+    padding: 3rem 2rem;
+  }
+
+  .ab-about-copy,
+  .ab-dentistry-copy {
+    padding: 3rem 2rem;
+  }
+
+  .ab-practice-layout,
+  .ab-visit-header,
+  .ab-technology-header,
+  .ab-team-header {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-technology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ab-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ab-treatments-grid,
+  .ab-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-visit-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ab-visit-card:nth-child(3n) {
+    border-right: 1px solid rgba(212,191,160,.15);
+  }
+
+  .ab-visit-card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .ab-affiliations-section {
+    padding: 2.5rem 2rem;
+  }
+
+
+  .office-map {
+    order: -1;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .ab-technology-grid,
+  .ab-team-grid,
+  .ab-visit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ab-visit-card {
+    border-right: none !important;
+  }
+
+  .ab-banner-left {
+    padding: 3.5rem 1.3rem;
+  }
+
+  .ab-about-copy,
+  .ab-dentistry-copy {
+    padding: 3.5rem 1.3rem;
+  }
+
+  .ab-banner-chip {
+        right: unset;
+    left: unset;
+    max-width: 90%;
+    width: 100%;
+  }
+
+
+  .ab-practice-section, .ab-visit-section, .ab-affiliations-section, .ab-reviews-section, .ab-technology-section, .ab-treatments-section, .ab-team-section {
+    padding: 3.5rem 1.3rem;
+  }
+
+
+  .ab-treatments-img {
+    height: 250px;
+  }
+
+  .ab-visit-header {
+        gap: 1rem;
+margin-bottom: 2rem;
+  }
+
+
+  .ab-affiliations-inner {
+    justify-content: center;
+  }
+
+  .ab-affiliations-logos .ab-affiliations-pill {
+    width: 100%;
+    border-bottom: 1px solid rgba(212, 191, 160, .25);
+    border-right: 0px;
+    padding: 1.5rem 2rem;
+        display: flex;
+    justify-content: center;
+  }
+
+  .ab-technology-header {
+        gap: 1rem;
+        margin-bottom: 2rem;
+  }
+
+  .ab-team-header {
+        gap: 1rem;
+        margin-bottom: 2rem;
+  }
+
+  .ab-affiliations-logos {
+  flex-wrap: wrap;
+}
+
+
+
+}
