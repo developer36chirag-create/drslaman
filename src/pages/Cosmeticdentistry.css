@@ -275,6 +275,10 @@
     display: none;
   }
 
+  .cd-treatments-header, .cd-candidacy-header, .cd-aftercare-header {
+    max-width: 100%;
+  }
+
 
 }
 @media(max-width:767px){
@@ -296,6 +300,11 @@
   }
 
   .cd-compare-cta, .cd-why-footer {
+    padding: 1.5rem 1.5rem;
+  }
+
+
+  .cd-benefit-card {
     padding: 1.5rem 1.5rem;
   }
 
