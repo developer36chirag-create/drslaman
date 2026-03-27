@@ -15,7 +15,7 @@ const COLS = [
     links: [
       { label: 'About the Practice', href: '/about' },
       { label: 'James Slaman, DDS, PC', href: '/doctor' },
-      { label: 'Albuquerque Office', href: '#office' },
+      { label: 'Albuquerque Office', href: '/office' },
       { label: 'Patient Forms', href: '#' },
       { label: 'Testimonials', href: '#reviews' },
       { label: 'Photo Gallery', href: '#' },

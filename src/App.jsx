@@ -8,7 +8,8 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Doctor from './pages/Doctor'
+import Doctor from "./pages/Doctor";
+import Office from "./pages/Office";
 
 import "./App.css";
 
@@ -70,6 +71,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/doctor" element={<Doctor />} />
+        <Route path="/office" element={<Office />} />
       </Routes>
       {/* ✅ ROUTING ENDS HERE */}
 

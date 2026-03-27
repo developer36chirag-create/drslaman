@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="nav-right">
         <a href="#technology">Technology</a>
         <a href="#financing">Financing</a>
-        <a href="#office">Office</a>
+        <a href="/office">Office</a>
         <a href="#contact" className="nav-cta">Book Now</a>
       </div>
     </nav>
