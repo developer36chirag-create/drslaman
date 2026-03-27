@@ -1056,7 +1056,7 @@
   }
 
   .ab-banner-right {
-    height: 55vw;
+    height: 70vw;
         display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -1194,9 +1194,9 @@ margin-bottom: 2rem;
   }
 
   .ab-banner-chip {
-        right: unset;
+        right: unset !important;
     left: unset;
-    max-width: 90%;
+    max-width: 90% !important;
     width: 100%;
   }
 

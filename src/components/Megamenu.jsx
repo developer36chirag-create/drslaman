@@ -25,7 +25,7 @@ const COLS = [
   {
     title: 'Cosmetic Dentistry',
     links: [
-      { label: 'Cosmetic Dentistry', href: '#' },
+      { label: 'Cosmetic Dentistry', href: '/services/cosmetic-dentistry' },
       { label: 'Dental Bonding', href: '#' },
       { label: 'Gum Contouring', href: '#' },
       { label: 'Smile Makeover', href: '#' },

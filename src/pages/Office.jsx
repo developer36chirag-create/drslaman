@@ -319,7 +319,7 @@ It was warm and friendly, you feel like you just made new friends that will quic
           <div className="lo-map-embed">
             <iframe
               title="Dr. Slaman Office Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.4!2d-106.5!3d35.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbacd3e17d6e11dc6!2sDr.%20James%20Slaman%20DDS%2C%20PC!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.900173428044!2d-106.54977862378546!3d35.184040557125165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872275ede4982515%3A0x4c590872b573200!2s8650%20Alameda%20Blvd%20NE%2C%20Albuquerque%2C%20NM%2087122!5e0!3m2!1sen!2sus!4v1774603984115!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0, display: 'block' }}

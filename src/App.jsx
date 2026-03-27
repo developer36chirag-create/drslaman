@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Doctor from "./pages/Doctor";
 import Office from "./pages/Office";
+import Cosmeticdentistry from "./pages/Cosmeticdentistry";
 
 import "./App.css";
 
@@ -72,6 +73,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/doctor" element={<Doctor />} />
         <Route path="/office" element={<Office />} />
+        <Route path="/services/cosmetic-dentistry" element={<Cosmeticdentistry />} />
       </Routes>
       {/* ✅ ROUTING ENDS HERE */}
 
