@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Doctor from "./pages/Doctor";
 import Office from "./pages/Office";
 import Cosmeticdentistry from "./pages/Cosmeticdentistry";
+import Dentalbonding from './pages/Dentalbonding'
 
 import "./App.css";
 
@@ -74,6 +75,7 @@ export default function App() {
         <Route path="/doctor" element={<Doctor />} />
         <Route path="/office" element={<Office />} />
         <Route path="/services/cosmetic-dentistry" element={<Cosmeticdentistry />} />
+        <Route path="/services/dental-bonding"  element={<Dentalbonding />} />
       </Routes>
       {/* ✅ ROUTING ENDS HERE */}
 
