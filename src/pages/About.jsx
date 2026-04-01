@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './About.css';
+import Ratebar from "../components/Ratebar";
 
 /* ─────────────────────────────────────────
    DATA
@@ -557,16 +558,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="rate-bar">
-        <h3>Rate, Review &amp; Explore</h3>
-        <div className="rate-icons">
-          <a href="#" className="rate-ico" title="Google Reviews">G</a>
-          <a href="#" className="rate-ico" title="Yelp">Y</a>
-          <a href="#" className="rate-ico" title="Healthgrades">HG</a>
-        </div>
-      </section>
 
-
+      <Ratebar />
 
     </main>
   );

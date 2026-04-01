@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
-import './Home.css'
+import React, { useEffect } from 'react';
+import './Home.css';
+import Ratebar from "../components/Ratebar";
 
 /* ─────────────────────────────────────────
    DATA
@@ -111,9 +112,9 @@ const RS_COLS = [
 ]
 
 const WHY_CARDS = [
-  { ico: '🏆', title: 'CareCredit®', desc: 'Are you interested in financing your care? CareCredit allows patients to make affordable monthly payments.' },
-  { ico: '💡', title: 'In-Office Payment Plans', desc: "Dr. Slaman will work with you to create a payment plan that fits your individual financial needs." },
-  { ico: '🤝', title: 'Explore Payment Options', desc: "Dr. Slaman's friendly, knowledgeable staff will help you understand your costs and payment options." },
+  { img: "/credit-card.png", title: 'CareCredit®', desc: 'Are you interested in financing your care? CareCredit allows patients to make affordable monthly payments.' },
+  { img: "/plan.png", title: 'In-Office Payment Plans', desc: "Dr. Slaman will work with you to create a payment plan that fits your individual financial needs." },
+  { img: "/payment-method.png", title: 'Explore Payment Options', desc: "Dr. Slaman's friendly, knowledgeable staff will help you understand your costs and payment options." },
 ]
 
 const DR_MEMS = [
@@ -517,12 +518,14 @@ export default function Home() {
         </p>
         <div className="tech-grid">
           {[
-            { ico: '🦷', name: 'Luxurious Amenities', desc: "Our warm, inviting Albuquerque, NM, dental office is designed to put you at ease. The welcoming reception area features a comfortable couch and chairs, hot tea and coffee, and refreshing filtered water. Our treatment rooms feature warm, comfy blankets, as well as noise-canceling headphones to help you relax." },
-            { ico: '🔬', name: 'Effective Anesthesia & Sedation', desc: "Some people are afraid of dentists because of the large anesthetic needle. That's why Dr. Slaman uses The Wand® anesthetic system at our dentistry practice. The Wand delivers a computer-regulated flow of anesthesia only to your damaged tooth and not to an entire area of your mouth. Our patients love it and say it's nearly pain-free." },
-            { ico: '💻', name: 'Open Dialogue', desc: "Patient education is extremely important to Dr. Slaman and his dental team. They want you to be as informed as possible so you're fully aware of your current dental health and available treatment options. This will help you make better decisions about maintaining your oral health for years to come." },
+            {  img: "/tooth.png", name: 'Luxurious Amenities', desc: "Our warm, inviting Albuquerque, NM, dental office is designed to put you at ease. The welcoming reception area features a comfortable couch and chairs, hot tea and coffee, and refreshing filtered water. Our treatment rooms feature warm, comfy blankets, as well as noise-canceling headphones to help you relax." },
+            {  img: "/anesthesia.png", name: 'Effective Anesthesia & Sedation', desc: "Some people are afraid of dentists because of the large anesthetic needle. That's why Dr. Slaman uses The Wand® anesthetic system at our dentistry practice. The Wand delivers a computer-regulated flow of anesthesia only to your damaged tooth and not to an entire area of your mouth. Our patients love it and say it's nearly pain-free." },
+            {  img: "/dialogue.png", name: 'Open Dialogue', desc: "Patient education is extremely important to Dr. Slaman and his dental team. They want you to be as informed as possible so you're fully aware of your current dental health and available treatment options. This will help you make better decisions about maintaining your oral health for years to come." },
           ].map((t) => (
             <div className="tech-card sr" key={t.name}>
-              <div className="tech-ico">{t.ico}</div>
+              <div className="tech-ico">
+                <img src={t.img} alt={t.name} />
+              </div>
               <div className="tech-name">{t.name}</div>
               <p className="tech-desc">{t.desc}</p>
             </div>
@@ -730,7 +733,9 @@ export default function Home() {
         <div className="why-grid">
           {WHY_CARDS.map((w) => (
             <div className="why-card sr" key={w.title}>
-              <div className="why-ico">{w.ico}</div>
+              <div className="why-ico">
+                <img src={w.img} alt={w.title} />
+              </div>
               <div className="why-title">{w.title}</div>
               <p className="why-desc">{w.desc}</p>
             </div>
@@ -774,21 +779,27 @@ export default function Home() {
           <p className="sec-tag">Visit Us</p>
           <h2 className="sec-h">Albuquerque<br /><em>Office</em></h2>
           <div className="o-row">
-            <span className="o-ico">📍</span>
+            <span className="o-ico">
+              <img src="/maps-and-flags.png" alt="" />
+            </span>
             <div>
               <div className="o-lbl">Address</div>
               <div className="o-val">8650 Alameda Blvd NE, Ste 104E<br />Albuquerque, NM 87122</div>
             </div>
           </div>
           <div className="o-row">
-            <span className="o-ico">🕐</span>
+            <span className="o-ico">
+              <img src="/time.png" alt="" />
+            </span>
             <div>
               <div className="o-lbl">Hours</div>
               <div className="o-val">Open Today 7:30 AM – 4:30 PM</div>
             </div>
           </div>
           <div className="o-row">
-            <span className="o-ico">📞</span>
+            <span className="o-ico">
+              <img src="/phone-call.png" alt="" />
+            </span>
             <div>
               <div className="o-lbl">Phone</div>
               <div className="o-val"><a href="tel:5052268598">(505) 226-8598</a></div>
@@ -830,14 +841,8 @@ export default function Home() {
       {/* ══════════════════════════════════
           RATE BAR
       ══════════════════════════════════ */}
-      <section className="rate-bar">
-        <h3>Rate, Review &amp; Explore</h3>
-        <div className="rate-icons">
-          <a href="#" className="rate-ico" title="Google Reviews">G</a>
-          <a href="#" className="rate-ico" title="Yelp">Y</a>
-          <a href="#" className="rate-ico" title="Healthgrades">HG</a>
-        </div>
-      </section>
+
+      <Ratebar />
 
     </main>
   )

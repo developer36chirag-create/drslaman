@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Doctor.css';
+import Ratebar from "../components/Ratebar";
 
 /* ─────────────────────────────────────────
    DATA
@@ -571,14 +572,9 @@ export default function Doctor() {
       {/* ══════════════════════════════════
           RATE BAR
       ══════════════════════════════════ */}
-      <section className="dr-rate-bar">
-        <h3>Rate, Review &amp; Explore</h3>
-        <div className="dr-rate-icons">
-          <a href="https://maps.google.com/maps?cid=13452876912051634118" target="_blank" rel="noopener noreferrer" className="dr-rate-ico" title="Google Reviews">G</a>
-          <a href="#" className="dr-rate-ico" title="Yelp">Y</a>
-          <a href="#" className="dr-rate-ico" title="Healthgrades">HG</a>
-        </div>
-      </section>
+
+
+      <Ratebar />
 
     </main>
   );

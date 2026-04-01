@@ -11,8 +11,9 @@ import About from "./pages/About";
 import Doctor from "./pages/Doctor";
 import Office from "./pages/Office";
 import Cosmeticdentistry from "./pages/Cosmeticdentistry";
-import Dentalbonding from './pages/Dentalbonding'
-import Gumcontouring from './pages/Gumcontouring'
+import Dentalbonding from './pages/Dentalbonding';
+import Gumcontouring from './pages/Gumcontouring';
+import Ratebar from "./components/Ratebar";
 
 import "./App.css";
 
