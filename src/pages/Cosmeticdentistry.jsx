@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import './Cosmeticdentistry.css';
 import Ratebar from "../components/Ratebar";
+import Contactform from "../components/Contactform";
+import Officesection from "../components/Officesection";
+import Doctorpanel from "../components/Doctorpanel";
 
 
 const BADGES = [
@@ -57,11 +60,6 @@ const REVIEWS = [
   { initial: 'W', name: 'Weston Losinski', city: 'Albuquerque, NM', year: '2023', text: 'Very clean, professional, and knowledgeable. They fixed my broken tooth and it looks and works like it was never broken.' },
 ];
 
-const DR_MEMS = [
-  'American Dental Association','American Academy of Implant Dentistry',
-  'Academy of General Dentistry','American Academy of Sleep Medicine',
-  'American Academy of Cosmetic Dentistry','Spear Faculty Club',
-]
 
 function useScrollReveal() {
   useEffect(() => {
@@ -406,91 +404,21 @@ export default function CosmeticDentistry() {
           {/* ══════════════════════════════════
           DR PANEL — ABOUT
       ══════════════════════════════════ */}
-      <div className="dr-panel">
-        <div className="dr-panel-img">
-          <img src="/Dr. James Slaman DDS.png" alt="" />
-        </div>
-        <div className="dr-panel-body">
-          <p className="sec-tag">About the Doctor</p>
-          <h2>James Slaman, DDS, PC</h2>
-          <p className="spec">Cosmetic &amp; Restorative Dentistry · Albuquerque, NM</p>
-          <p>
-            <strong>Dr. James Slaman</strong> specializes in{' '}
-            <em style={{ color: 'var(--c-terra)' }}>cosmetic dentistry</em> and offers a full selection
-            of <strong>general</strong> and <strong>restorative treatments</strong>. Dr. Slaman is a
-            member of various professional associations, including:
-          </p>
-          <div className="dr-mems">
-            {DR_MEMS.map((m) => <span className="dr-mem" key={m}>{m}</span>)}
-          </div>
-          <p className="dr-contact">
-            To request an appointment at our <strong>Albuquerque, NM dental office</strong>,{' '}
-            <a href="#contact">contact us online</a> or call{' '}
-            <a href="tel:5052268598">(505) 226-8598</a>.
-          </p>
-        </div>
-      </div>
+
+      <Doctorpanel />
+
 
       {/* ══════════════════════════════════
           OFFICE — SPLIT
       ══════════════════════════════════ */}
-      <section id="office" className="office-split">
-        <div className="office-copy">
-          <p className="sec-tag">Visit Us</p>
-          <h2 className="sec-h">Albuquerque<br /><em>Office</em></h2>
-          <div className="o-row">
-            <span className="o-ico">📍</span>
-            <div>
-              <div className="o-lbl">Address</div>
-              <div className="o-val">8650 Alameda Blvd NE, Ste 104E<br />Albuquerque, NM 87122</div>
-            </div>
-          </div>
-          <div className="o-row">
-            <span className="o-ico">🕐</span>
-            <div>
-              <div className="o-lbl">Hours</div>
-              <div className="o-val">Open Today 7:30 AM – 4:30 PM</div>
-            </div>
-          </div>
-          <div className="o-row">
-            <span className="o-ico">📞</span>
-            <div>
-              <div className="o-lbl">Phone</div>
-              <div className="o-val"><a href="tel:5052268598">(505) 226-8598</a></div>
-            </div>
-          </div>
-          <div className="office-btns">
-            <a href="#" className="o-btn fill">About Our Office</a>
-            <a href="https://maps.google.com/?q=8650+Alameda+Blvd+NE+Albuquerque+NM+87122" target="_blank" rel="noopener noreferrer" className="o-btn ghost">Directions →</a>
-            <a href="tel:5052268598" className="o-btn ghost">(505) 226-8598</a>
-          </div>
-        </div>
-        <div className="office-map" />
-      </section>
+      <Officesection />
+
 
       {/* ══════════════════════════════════
           CONTACT FORM
       ══════════════════════════════════ */}
-      <section id="contact" className="contact-wrap">
-        <div className="contact-bg" />
-        <div className="contact-inner">
-          <p className="sec-tag">Reach Out</p>
-          <h2 className="sec-h" style={{ color: '#fff' }}>Contact Us<br /><em>Today</em></h2>
-          <p className="sec-sub">Our friendly team is ready to answer your questions and help you schedule your visit.</p>
-          <form className="c-form" onSubmit={(e) => e.preventDefault()}>
-            <div className="c-row">
-              <div className="c-field"><label>Name</label><input type="text" placeholder="Your full name" /></div>
-              <div className="c-field"><label>Email</label><input type="email" placeholder="your@email.com" /></div>
-            </div>
-            <div className="c-field"><label>Phone Number</label><input type="tel" placeholder="(505) 000-0000" /></div>
-            <div className="c-field">
-              <label>Message</label>
-              <textarea rows={4} placeholder="Tell us about your smile goals or any questions you have…" />
-            </div>
-            <button className="c-submit" type="submit">Send Message →</button>
-          </form>
-        </div>
-      </section>
+
+      <Contactform />
 
       {/* ══════════════════════════════════
           RATE BAR

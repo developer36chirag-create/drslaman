@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './About.css';
 import Ratebar from "../components/Ratebar";
+import Contactform from "../components/Contactform";
+import Officesection from "../components/Officesection";
 
 /* ─────────────────────────────────────────
    DATA
@@ -503,60 +505,12 @@ export default function About() {
       {/* ══════════════════════════════════
           OFFICE — SPLIT
       ══════════════════════════════════ */}
-      <section id="office" className="office-split">
-        <div className="office-copy">
-          <p className="sec-tag">Visit Us</p>
-          <h2 className="sec-h">Albuquerque<br /><em>Office</em></h2>
-          <div className="o-row">
-            <span className="o-ico">📍</span>
-            <div>
-              <div className="o-lbl">Address</div>
-              <div className="o-val">8650 Alameda Blvd NE, Ste 104E<br />Albuquerque, NM 87122</div>
-            </div>
-          </div>
-          <div className="o-row">
-            <span className="o-ico">🕐</span>
-            <div>
-              <div className="o-lbl">Hours</div>
-              <div className="o-val">Open Today 7:30 AM – 4:30 PM</div>
-            </div>
-          </div>
-          <div className="o-row">
-            <span className="o-ico">📞</span>
-            <div>
-              <div className="o-lbl">Phone</div>
-              <div className="o-val"><a href="tel:5052268598">(505) 226-8598</a></div>
-            </div>
-          </div>
-          <div className="office-btns">
-            <a href="#" className="o-btn fill">About Our Office</a>
-            <a href="https://maps.google.com/?q=8650+Alameda+Blvd+NE+Albuquerque+NM+87122" target="_blank" rel="noopener noreferrer" className="o-btn ghost">Directions →</a>
-            <a href="tel:5052268598" className="o-btn ghost">(505) 226-8598</a>
-          </div>
-        </div>
-        <div className="office-map" />
-      </section>
 
-      <section id="contact" className="contact-wrap">
-        <div className="contact-bg" />
-        <div className="contact-inner">
-          <p className="sec-tag">Reach Out</p>
-          <h2 className="sec-h" style={{ color: '#fff' }}>Contact Us<br /><em>Today</em></h2>
-          <p className="sec-sub">Our friendly team is ready to answer your questions and help you schedule your visit.</p>
-          <form className="c-form" onSubmit={(e) => e.preventDefault()}>
-            <div className="c-row">
-              <div className="c-field"><label>Name</label><input type="text" placeholder="Your full name" /></div>
-              <div className="c-field"><label>Email</label><input type="email" placeholder="your@email.com" /></div>
-            </div>
-            <div className="c-field"><label>Phone Number</label><input type="tel" placeholder="(505) 000-0000" /></div>
-            <div className="c-field">
-              <label>Message</label>
-              <textarea rows={4} placeholder="Tell us about your smile goals or any questions you have…" />
-            </div>
-            <button className="c-submit" type="submit">Send Message →</button>
-          </form>
-        </div>
-      </section>
+
+      <Officesection />
+
+
+      <Contactform />
 
 
       <Ratebar />

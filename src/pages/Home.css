@@ -711,7 +711,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
 /* ══════════════════════════════════════════════
    DR ABOUT PANEL
 ══════════════════════════════════════════════ */
-.dr-panel {
+/* .dr-panel {
   background: var(--c-cream);
   padding: 5rem 6rem;
   display: grid;
@@ -724,7 +724,6 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   height: 215px;
   border-radius: var(--radius-md);
   overflow: hidden;
-  /* background: url('/Dr. James Slaman DDS.png') center top / cover no-repeat; */
   border: 3px solid rgba(212,191,160,.38);
 }
 .dr-panel-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 400; color: var(--c-deep); margin-bottom: .3rem; }
@@ -735,12 +734,12 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
 .dr-mem::before { content: '·'; color: var(--c-terra); font-size: 1.1rem; line-height: 1; flex-shrink: 0; }
 .dr-contact { font-size: .86rem; color: var(--c-muted); line-height: 1.7; margin-top: 1.4rem; }
 .dr-contact a { color: var(--c-terra); text-decoration: none; font-weight: 500; }
-.dr-contact a:hover { text-decoration: underline; }
+.dr-contact a:hover { text-decoration: underline; } */
 
 /* ══════════════════════════════════════════════
    OFFICE SPLIT
 ══════════════════════════════════════════════ */
-.office-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 58vh; }
+/* .office-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 58vh; }
 .office-copy {
   padding: 5rem 5rem 5rem 6rem;
   display: flex;
@@ -767,14 +766,13 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   background: url('/photo-1524661135-423995f22d0b.jpg') center/cover no-repeat;
   position: relative;
 }
-.office-map::after { content: ''; position: absolute; inset: 0; background: rgba(28,20,16,.1); }
+.office-map::after { content: ''; position: absolute; inset: 0; background: rgba(28,20,16,.1); } */
 
 /* ══════════════════════════════════════════════
    CONTACT FORM
 ══════════════════════════════════════════════ */
-.contact-wrap {
+/* .contact-wrap {
   position: relative;
-  /* min-height: 70vh; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -806,7 +804,7 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
 }
 .c-field input::placeholder, .c-field textarea::placeholder { color: rgba(255,255,255,.28); }
 .c-field input:focus, .c-field textarea:focus { border-color: var(--c-terra); background: rgba(255,255,255,.12); }
-.c-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.c-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; } */
 
 /* ══════════════════════════════════════════════
    RESPONSIVE
@@ -884,16 +882,16 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
   .why-grid { grid-template-columns: 1fr; }
 
   /* Dr Panel */
-  .dr-panel { grid-template-columns: 1fr; padding: 3.5rem 2.5rem; }
-  .dr-mems { grid-template-columns: 1fr; }
+  /* .dr-panel { grid-template-columns: 1fr; padding: 3.5rem 2.5rem; }
+  .dr-mems { grid-template-columns: 1fr; } */
 
   /* Office */
-  .office-split { grid-template-columns: 1fr; }
+  /* .office-split { grid-template-columns: 1fr; }
   .office-copy { padding: 3.5rem 2.5rem; }
-  .office-map { min-height: 52vw; }
+  .office-map { min-height: 52vw; } */
 
   /* Contact */
-  .c-row { grid-template-columns: 1fr; }
+  /* .c-row { grid-template-columns: 1fr; } */
 
   .fp-item .fp-img {
     order: -1;
@@ -970,9 +968,9 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
     align-items: flex-start;
   }
 
-  .dr-copy {
+  /* .dr-copy {
     padding: 3.5rem 1.3rem;
-  }
+  } */
 
   .fp-header {
     padding: 0px;
@@ -1002,9 +1000,9 @@ h3.fp-name em { font-style: italic; color: var(--c-terra); }
     gap: 2rem;
   }
 
-  .office-copy {
+  /* .office-copy {
     padding: 3.5rem 1.3rem;
-  }
+  } */
   
 
 

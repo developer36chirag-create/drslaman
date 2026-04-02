@@ -14,6 +14,9 @@ import Cosmeticdentistry from "./pages/Cosmeticdentistry";
 import Dentalbonding from './pages/Dentalbonding';
 import Gumcontouring from './pages/Gumcontouring';
 import Ratebar from "./components/Ratebar";
+import Contactform from "./components/Contactform";
+import Officesection from "./components/Officesection";
+import Doctorpanel from "./components/Doctorpanel";
 
 import "./App.css";
 

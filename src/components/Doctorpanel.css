@@ -1,0 +1,98 @@
+.dr-panel {
+    background: var(--c-cream);
+    padding: 5rem 6rem;
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 3.5rem;
+    align-items: start;
+}
+
+.dr-panel-img {
+    width: 190px;
+    height: 215px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    /* background: url('/Dr. James Slaman DDS.png') center top / cover no-repeat; */
+    border: 3px solid rgba(212, 191, 160, .38);
+}
+
+.dr-panel-body h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--c-deep);
+    margin-bottom: .3rem;
+}
+
+.spec {
+    font-size: .75rem;
+    color: var(--c-terra);
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.dr-panel-body p {
+    font-size: .88rem;
+    color: var(--c-muted);
+    line-height: 1.78;
+    margin-bottom: 1rem;
+}
+
+.dr-mems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .35rem .8rem;
+    margin-top: 1rem;
+}
+
+.dr-mem {
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+    font-size: .8rem;
+    color: var(--c-muted);
+}
+
+.dr-mem::before {
+    content: '·';
+    color: var(--c-terra);
+    font-size: 1.1rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.dr-contact {
+    font-size: .86rem;
+    color: var(--c-muted);
+    line-height: 1.7;
+    margin-top: 1.4rem;
+}
+
+.dr-contact a {
+    color: var(--c-terra);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dr-contact a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:1100px) {
+    .dr-panel {
+        grid-template-columns: 1fr;
+        padding: 3.5rem 2.5rem;
+    }
+
+    .dr-mems {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:767px) {
+    .dr-copy {
+        padding: 3.5rem 1.3rem;
+    }
+}
