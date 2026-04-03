@@ -4,7 +4,9 @@
 /* HERO */
 
 /* BENEFITS */
-.cd-benefits-section { background:var(--c-deep); padding:6rem; position:relative; overflow:hidden;}
+.cd-benefits-section { background:var(--c-deep); padding:6rem; position:relative; overflow:hidden;
+  /* background-image: url(/drslaman/public/healthy-food.png); */
+}
 .cd-benefits-section::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse at 80% 40%,rgba(160,89,58,.1) 0%,transparent 55%); pointer-events:none; }
 .cd-benefits-header { max-width:640px; margin-bottom:3.5rem; position:relative; z-index:1; }
 .cd-benefits-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; position:relative; z-index:1; }
@@ -12,6 +14,9 @@
 .cd-benefit-card:hover { background:rgba(160,89,58,.08); border-color:rgba(160,89,58,.22); }
 .cd-benefit-num { font-family:'Cormorant Garamond',serif; font-size:7rem; font-weight:300; color:rgba(212,191,160,.07); position:absolute; top:1rem; right:2rem; line-height:1; pointer-events:none; user-select:none; }
 .cd-benefit-ico { font-size:1.8rem; margin-bottom:1rem; }
+.cd-benefit-ico img {
+  width: 70px;
+}
 .cd-benefit-title { font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:600; color:rgba(245,240,232,.9); margin-bottom:.7rem; }
 .cd-benefit-desc { font-size:.85rem; line-height:1.8; color:rgba(245,240,232,.5); }
 
@@ -69,6 +74,9 @@
 .cd-why-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:linear-gradient(90deg,var(--c-terra),var(--c-sand)); transform:scaleX(0); transform-origin:left; transition:transform .35s ease; }
 .cd-why-card:hover::after { transform:scaleX(1); }
 .cd-why-ico { font-size:1.6rem; margin-bottom:.9rem; }
+.cd-why-ico img {
+  width: 70px;
+}
 .cd-why-title { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:600; color:var(--c-deep); margin-bottom:.45rem; }
 .cd-why-desc { font-size:.79rem; line-height:1.72; color:var(--c-muted); }
 .cd-why-footer { background:var(--c-warm); border:1px solid rgba(212,191,160,.28); border-radius:var(--radius-lg); padding:2.4rem 3rem; display:flex; justify-content:space-between; align-items:center; gap:3rem; flex-wrap:wrap; }
@@ -104,6 +112,9 @@
 .cd-candidacy-card { background:#fff; border:1px solid rgba(212,191,160,.25); border-radius:var(--radius-lg); padding:2.4rem 2rem; transition:transform .25s,box-shadow .25s; }
 .cd-candidacy-card:hover { transform:translateY(-3px); box-shadow:0 10px 36px rgba(28,14,8,.07); }
 .cd-candidacy-ico { font-size:1.7rem; margin-bottom:1rem; }
+.cd-candidacy-ico img {
+  width: 70px;
+}
 .cd-candidacy-title { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:600; color:var(--c-deep); margin-bottom:.5rem; }
 .cd-candidacy-desc { font-size:.82rem; line-height:1.75; color:var(--c-muted); }
 .cd-candidacy-cta { display:flex; align-items:center; gap:2rem; flex-wrap:wrap; padding:2.4rem 3rem; background:var(--c-warm); border:1px solid rgba(212,191,160,.28); border-radius:var(--radius-lg); }
@@ -118,6 +129,9 @@
 .cd-insurance-card { display:flex; gap:1rem; align-items:flex-start; background:rgba(255,255,255,.04); border:1px solid rgba(212,191,160,.1); border-radius:var(--radius-md); padding:1.4rem 1.6rem; transition:background .2s,border-color .2s; }
 .cd-insurance-card:hover { background:rgba(160,89,58,.08); border-color:rgba(160,89,58,.22); }
 .cd-insurance-ico { font-size:1.3rem; flex-shrink:0; margin-top:.1rem; }
+.cd-insurance-ico img {
+  width: 40px;
+}
 .cd-insurance-title { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:600; color:rgba(245,240,232,.88); margin-bottom:.3rem; }
 .cd-insurance-desc { font-size:.8rem; line-height:1.68; color:rgba(245,240,232,.45); }
 
@@ -148,6 +162,9 @@
 .cd-sedation-copy { padding:6rem 6rem 6rem 4rem; background:var(--c-warm); display:flex; flex-direction:column; justify-content:center; gap:1.4rem; }
 .cd-sedation-box { display:flex; gap:1rem; align-items:flex-start; background:var(--c-cream); border:1px solid rgba(212,191,160,.3); border-radius:var(--radius-md); padding:1.4rem 1.6rem; }
 .cd-sedation-box-ico { font-size:1.3rem; flex-shrink:0; margin-top:.1rem; }
+.cd-sedation-box-ico img {
+  width: 40px;
+}
 .cd-sedation-box-title { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:600; color:var(--c-deep); margin-bottom:.3rem; }
 .cd-sedation-box-desc { font-size:.8rem; line-height:1.7; color:var(--c-muted); }
 
@@ -158,6 +175,9 @@
 .cd-aftercare-card { background:#fff; border:1px solid rgba(212,191,160,.25); border-radius:var(--radius-lg); padding:2.4rem 2rem; transition:transform .25s,box-shadow .25s; }
 .cd-aftercare-card:hover { transform:translateY(-3px); box-shadow:0 10px 36px rgba(28,14,8,.07); }
 .cd-aftercare-ico { font-size:1.7rem; margin-bottom:1rem; }
+.cd-aftercare-ico img {
+  width: 70px;
+}
 .cd-aftercare-title { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:600; color:var(--c-deep); margin-bottom:.5rem; }
 .cd-aftercare-desc { font-size:.82rem; line-height:1.75; color:var(--c-muted); }
 

@@ -14,12 +14,12 @@ const BADGES = [
 ];
 
 const VISIT_CARDS = [
-  { ico: '💳', title: 'Financing Options',         desc: 'CareCredit and flexible in-office payment plans to make world-class dental care accessible for every budget.' },
-  { ico: '🔬', title: 'Advanced Technology',       desc: 'State-of-the-art equipment throughout our practice for more precise, comfortable, and effective treatments.' },
-  { ico: '🛋️', title: 'Plush Waiting Room',        desc: 'A beautifully appointed, relaxing waiting area designed to put you completely at ease from the moment you arrive.' },
-  { ico: '🎧', title: 'Noise Canceling Headphones',desc: 'Enjoy your favorite music or simply block out the world during your procedure for a truly comfortable experience.' },
-  { ico: '☕', title: 'Fresh, Hot Coffee',          desc: 'Complimentary fresh-brewed coffee waiting for you in our comfortable reception area — because you deserve it.' },
-  { ico: '🧣', title: 'Warm Blankets',             desc: 'Cozy warm blankets available to keep you comfortable, relaxed, and at ease throughout your entire visit.' },
+  { img: "/credit-card-1.png", title: 'Financing Options',         desc: 'CareCredit and flexible in-office payment plans to make world-class dental care accessible for every budget.' },
+  { img: "/surgical-instrument.png", title: 'Advanced Technology',       desc: 'State-of-the-art equipment throughout our practice for more precise, comfortable, and effective treatments.' },
+  { img: "/lounge.png", title: 'Plush Waiting Room',        desc: 'A beautifully appointed, relaxing waiting area designed to put you completely at ease from the moment you arrive.' },
+  { img: "/headphone.png", title: 'Noise Canceling Headphones',desc: 'Enjoy your favorite music or simply block out the world during your procedure for a truly comfortable experience.' },
+  { img: "/cup-of-drink.png", title: 'Fresh, Hot Coffee',          desc: 'Complimentary fresh-brewed coffee waiting for you in our comfortable reception area — because you deserve it.' },
+  { img: "/muffler.png", title: 'Warm Blankets',             desc: 'Cozy warm blankets available to keep you comfortable, relaxed, and at ease throughout your entire visit.' },
 ];
 
 const ABOUT_TAGS = [
@@ -228,7 +228,9 @@ export default function About() {
         <div className="ab-visit-grid">
           {VISIT_CARDS.map((c) => (
             <div className="ab-visit-card sr" key={c.title}>
-              <div className="ab-visit-ico">{c.ico}</div>
+              <div className="ab-visit-ico">
+                <img src={c.img} alt={c.title} />
+              </div>
               <h3>{c.title}</h3>
               <p>{c.desc}</p>
             </div>

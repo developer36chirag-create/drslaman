@@ -14,6 +14,7 @@
   /* min-height: 90vh; */
   overflow: hidden;
   padding-top: 105px; /* topbar 43px + navbar 62px */
+  /* background-image: url(/drslaman/public/insurance.png); */
 }
 
 .ab-banner-left {
@@ -371,6 +372,10 @@
   color: var(--c-terra);
 }
 
+.lo-addr-ico img {
+  width: 35px;
+}
+
 .lo-addr-lbl {
   font-size: .6rem;
   letter-spacing: .14em;
@@ -541,6 +546,10 @@
   margin-bottom: 1.1rem;
 }
 
+.lo-benefit-ico img {
+  width: 70px;
+}
+
 .lo-benefit-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
@@ -619,6 +628,10 @@
 .lo-tech-ico {
   font-size: 1.8rem;
   margin-bottom: .6rem;
+}
+
+.lo-tech-ico img {
+  width: 70px;
 }
 
 .lo-tech-num {
@@ -1014,6 +1027,10 @@
 .lo-payment-ico {
   font-size: 1.7rem;
   margin-bottom: 1rem;
+}
+
+.lo-payment-ico img {
+  width: 70px;
 }
 
 .lo-payment-title {

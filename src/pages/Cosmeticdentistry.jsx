@@ -13,15 +13,15 @@ const BADGES = [
 ];
 
 const BENEFITS = [
-  { num: '01', ico: '✨', title: 'Increased Self-Esteem', desc: "Do you feel embarrassed about the way your teeth look and hide them when you smile or laugh? Cosmetic dentistry at our Albuquerque dental office can ignite your confidence and help you feel great inside and out — whether you're interested in veneers, dental bonding, or a complete smile makeover." },
-  { num: '02', ico: '🚀', title: 'Increased Opportunity', desc: "Cosmetic dentistry helps you feel more confident, but did you know it can lead to greater opportunities in life, too? People with nice teeth are often regarded as more attractive and even more intelligent — opening doors to new job opportunities and meaningful relationships." },
+  { num: '01', img: "/sparkler.png", title: 'Increased Self-Esteem', desc: "Do you feel embarrassed about the way your teeth look and hide them when you smile or laugh? Cosmetic dentistry at our Albuquerque dental office can ignite your confidence and help you feel great inside and out — whether you're interested in veneers, dental bonding, or a complete smile makeover." },
+  { num: '02', img: "/rocket.png", title: 'Increased Opportunity', desc: "Cosmetic dentistry helps you feel more confident, but did you know it can lead to greater opportunities in life, too? People with nice teeth are often regarded as more attractive and even more intelligent — opening doors to new job opportunities and meaningful relationships." },
 ];
 
 const WHY_CARDS = [
-  { ico: '🏆', title: 'Expertise',            desc: 'Dr. Slaman is a highly regarded cosmetic dentist in Albuquerque, NM, where he was born, raised, and still calls home. He opened his practice in 1992 and was named Top Cosmetic Dentist by Albuquerque The Magazine three times.' },
-  { ico: '⭐', title: 'High-Quality Care',     desc: 'Dr. Slaman is a self-proclaimed perfectionist with extremely high standards. He regularly attends continuing education courses to provide the highest and most up-to-date dental care for his patients.' },
-  { ico: '🛋️', title: 'Comfortable Amenities', desc: "Patients know Dr. Slaman as a caring, extremely skilled dentist who offers warm blankets, headphones, and fresh hot coffee during every visit. Our office is carefully designed to help you feel at ease from the moment you enter." },
-  { ico: '💊', title: 'Sedation Dentistry',    desc: "Many patients are anxious about going to the dentist, but we don't want that to get in the way of your dream smile. Oral conscious sedation is available to ensure you feel relaxed and at ease during your visit." },
+  { img: "/award.png", title: 'Expertise',            desc: 'Dr. Slaman is a highly regarded cosmetic dentist in Albuquerque, NM, where he was born, raised, and still calls home. He opened his practice in 1992 and was named Top Cosmetic Dentist by Albuquerque The Magazine three times.' },
+  { img: "/premium-badge.png", title: 'High-Quality Care',     desc: 'Dr. Slaman is a self-proclaimed perfectionist with extremely high standards. He regularly attends continuing education courses to provide the highest and most up-to-date dental care for his patients.' },
+  { img: "/lounge-1.png", title: 'Comfortable Amenities', desc: "Patients know Dr. Slaman as a caring, extremely skilled dentist who offers warm blankets, headphones, and fresh hot coffee during every visit. Our office is carefully designed to help you feel at ease from the moment you enter." },
+  { img: "/capsules.png", title: 'Sedation Dentistry',    desc: "Many patients are anxious about going to the dentist, but we don't want that to get in the way of your dream smile. Oral conscious sedation is available to ensure you feel relaxed and at ease during your visit." },
 ];
 
 const TREATMENTS = [
@@ -34,15 +34,15 @@ const TREATMENTS = [
 ];
 
 const CANDIDACY = [
-  { ico: '🦷', title: 'Your Oral Health',          desc: "Successful cosmetic dentistry must begin with a healthy smile. If you have outstanding oral health issues like tooth decay or gum disease, you'll need preparatory treatment first — and Dr. Slaman can handle all of it right here in our office." },
-  { ico: '✅', title: 'Your Commitment to Results', desc: "Certain cosmetic treatments like veneers and crowns require slight but permanent alterations to your natural tooth structure. If you're hesitant, we encourage you to explore more temporary options like teeth whitening or dental bonding first." },
-  { ico: '🎯', title: 'Your Expectations',          desc: "Results will vary for each patient. Before treatment begins, Dr. Slaman will ensure you understand exactly what your chosen procedure can and cannot address. For multiple concerns, consider combining treatments in a smile makeover." },
+  { img: "/tooth.png", title: 'Your Oral Health',          desc: "Successful cosmetic dentistry must begin with a healthy smile. If you have outstanding oral health issues like tooth decay or gum disease, you'll need preparatory treatment first — and Dr. Slaman can handle all of it right here in our office." },
+  { img: "/check-mark.png", title: 'Your Commitment to Results', desc: "Certain cosmetic treatments like veneers and crowns require slight but permanent alterations to your natural tooth structure. If you're hesitant, we encourage you to explore more temporary options like teeth whitening or dental bonding first." },
+  { img: "/target.png", title: 'Your Expectations',          desc: "Results will vary for each patient. Before treatment begins, Dr. Slaman will ensure you understand exactly what your chosen procedure can and cannot address. For multiple concerns, consider combining treatments in a smile makeover." },
 ];
 
 const AFTERCARE = [
-  { ico: '🪥', title: 'Practice At-Home Care',   desc: 'Regular brushing and flossing extends the lifespan of veneers and crowns. Brushing with whitening toothpaste keeps teeth whiter for longer. Staving off gum disease maintains the new contour of your gum line.' },
-  { ico: '📅', title: 'Attend Regular Checkups', desc: 'Regular dental checkups about every six months with Dr. Slaman will allow him to maintain a healthy environment for your cosmetic dentistry treatment and keep an eye on any restorations.' },
-  { ico: '🥗', title: 'Minimize Certain Foods',  desc: 'Sticky foods can pull veneers or crowns out of place. Hard foods can damage restorations. Coffee, wine, and certain sauces can discolor your teeth — we recommend minimizing intake or drinking through a straw.' },
+  { img: "/toothbrush.png", title: 'Practice At-Home Care',   desc: 'Regular brushing and flossing extends the lifespan of veneers and crowns. Brushing with whitening toothpaste keeps teeth whiter for longer. Staving off gum disease maintains the new contour of your gum line.' },
+  { img: "/calendar.png", title: 'Attend Regular Checkups', desc: 'Regular dental checkups about every six months with Dr. Slaman will allow him to maintain a healthy environment for your cosmetic dentistry treatment and keep an eye on any restorations.' },
+  { img: "/healthy-food.png", title: 'Minimize Certain Foods',  desc: 'Sticky foods can pull veneers or crowns out of place. Hard foods can damage restorations. Coffee, wine, and certain sauces can discolor your teeth — we recommend minimizing intake or drinking through a straw.' },
 ];
 
 const RESTORATIONS = [
@@ -126,7 +126,9 @@ export default function CosmeticDentistry() {
           {BENEFITS.map((b,i) => (
             <div className="cd-benefit-card sr" key={b.num} style={{transitionDelay:`${i*0.12}s`}}>
               <span className="cd-benefit-num">{b.num}</span>
-              <div className="cd-benefit-ico">{b.ico}</div>
+              <div className="cd-benefit-ico">
+                <img src={b.img} alt={b.title} />
+              </div>
               <h3 className="cd-benefit-title">{b.title}</h3>
               <p className="cd-benefit-desc">{b.desc}</p>
             </div>
@@ -204,7 +206,9 @@ export default function CosmeticDentistry() {
         <div className="cd-why-grid">
           {WHY_CARDS.map((w,i) => (
             <div className="cd-why-card sr" key={w.title} style={{transitionDelay:`${i*0.1}s`}}>
-              <div className="cd-why-ico">{w.ico}</div>
+              <div className="cd-why-ico">
+                <img src={w.img} alt={w.title} />
+              </div>
               <h3 className="cd-why-title">{w.title}</h3>
               <p className="cd-why-desc">{w.desc}</p>
             </div>
@@ -259,7 +263,9 @@ export default function CosmeticDentistry() {
         <div className="cd-candidacy-grid">
           {CANDIDACY.map((c,i) => (
             <div className="cd-candidacy-card sr" key={c.title} style={{transitionDelay:`${i*0.1}s`}}>
-              <div className="cd-candidacy-ico">{c.ico}</div>
+              <div className="cd-candidacy-ico">
+                <img src={c.img} alt={c.title} />
+              </div>
               <h3 className="cd-candidacy-title">{c.title}</h3>
               <p className="cd-candidacy-desc">{c.desc}</p>
             </div>
@@ -282,12 +288,14 @@ export default function CosmeticDentistry() {
         </div>
         <div className="cd-insurance-cards sr-right">
           {[
-            {ico:'🏥',title:'Insurance',desc:'We accept most major dental insurance plans. Our friendly staff will work with your provider to help you maximize your benefits.'},
-            {ico:'💳',title:'CareCredit® Financing',desc:'No or low-interest monthly payments — allowing you to pay for dental care over time without financial strain.'},
-            {ico:'📋',title:'In-Office Payment Plans',desc:'Dr. Slaman and our knowledgeable staff will happily create a payment plan that fits your specific financial needs.'},
+            {img: "/insurance-1.png",title:'Insurance',desc:'We accept most major dental insurance plans. Our friendly staff will work with your provider to help you maximize your benefits.'},
+            {img: "/credit-card-2.png",title:'CareCredit® Financing',desc:'No or low-interest monthly payments — allowing you to pay for dental care over time without financial strain.'},
+            {img: "/plan-1.png",title:'In-Office Payment Plans',desc:'Dr. Slaman and our knowledgeable staff will happily create a payment plan that fits your specific financial needs.'},
           ].map((p,i) => (
             <div className="cd-insurance-card" key={p.title} style={{transitionDelay:`${i*0.1}s`}}>
-              <span className="cd-insurance-ico">{p.ico}</span>
+              <span className="cd-insurance-ico">
+                <img src={p.img} alt={p.title} />
+              </span>
               <div><div className="cd-insurance-title">{p.title}</div><p className="cd-insurance-desc">{p.desc}</p></div>
             </div>
           ))}
@@ -323,7 +331,9 @@ export default function CosmeticDentistry() {
           <h2 className="sec-h">Will My Cosmetic<br /><em>Treatment Hurt?</em></h2>
           <p className="sec-body" style={{marginTop:'.6rem'}}>If you are worried that improving your smile will be a painful process, there is nothing to fear. Most cosmetic treatments are minimally invasive and involve very little discomfort. Your comfort will always be our priority.</p>
           <div className="cd-sedation-box">
-            <div className="cd-sedation-box-ico">💊</div>
+            <div className="cd-sedation-box-ico">
+              <img src="/capsules.png" alt="" />
+            </div>
             <div>
               <h4 className="cd-sedation-box-title">The Benefits of Dental Sedation</h4>
               <p className="cd-sedation-box-desc">Oral conscious sedation induces a state of deep relaxation that can help your treatment fly by. Many patients tell us that sedation gave them peace of mind that made all the difference during their appointment.</p>
@@ -343,7 +353,9 @@ export default function CosmeticDentistry() {
         <div className="cd-aftercare-grid">
           {AFTERCARE.map((a,i) => (
             <div className="cd-aftercare-card sr" key={a.title} style={{transitionDelay:`${i*0.1}s`}}>
-              <div className="cd-aftercare-ico">{a.ico}</div>
+              <div className="cd-aftercare-ico">
+                <img src={a.img} alt={a.title} />
+              </div>
               <h3 className="cd-aftercare-title">{a.title}</h3>
               <p className="cd-aftercare-desc">{a.desc}</p>
             </div>

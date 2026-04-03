@@ -18,19 +18,16 @@ const BADGES = [
 
 const ADVANTAGES = [
   {
-    ico: '💰',
     num: '01',
     title: 'It\'s Affordable',
     desc: 'Bonding is one of the most affordable cosmetic dentistry treatments available and costs substantially less than porcelain veneers. Plus, it conceals stains, closes gaps between teeth, and hides other imperfections marring your smile.',
   },
   {
-    ico: '⚡',
     num: '02',
     title: 'It\'s Quick',
     desc: 'Because there is minimal preparation needed for dental bonding, you\'re typically in and out in one visit of less than an hour. In contrast, veneers require temporary restorations and multiple visits over a couple of weeks to complete.',
   },
   {
-    ico: '↩️',
     num: '03',
     title: 'It\'s Reversible',
     desc: 'Unlike veneers, enamel does not need to be removed and teeth do not need to be reshaped for bonding. Instead, the tooth is only gently etched before applying the composite resin material. And, if you change your mind, bonding is reversible.',
@@ -201,7 +198,6 @@ export default function DentalBonding() {
             >
               <div className="db-advantage-top">
                 <span className="db-advantage-num">{a.num}</span>
-                <span className="db-advantage-ico">{a.ico}</span>
               </div>
               <h3 className="db-advantage-title">{a.title}</h3>
               <p className="db-advantage-desc">{a.desc}</p>

@@ -37,17 +37,17 @@ const AFFILIATION_PILLS = [
 
 const BENEFITS = [
   {
-    ico: '🛋️',
+    img: "/lounge-1.png",
     title: 'Comfortable Atmosphere',
     desc: 'Our Albuquerque practice wants every patient to feel as comfortable and relaxed as possible. We offer cozy seating in our waiting room as well as warm blankets and noise-canceling headphones in our treatment rooms. Our reception area also provides hot tea, coffee, and filtered water while you wait.',
   },
   {
-    ico: '🤝',
+    img: "/handshake.png",
     title: 'Patient-First Approach',
     desc: 'The patient is our number one priority. Dr. James Slaman takes the time to get to know you and your oral health needs. By listening to your goals, Dr. Slaman can recommend the best ways to help you achieve your desired results. We never recommend a treatment unless we feel it is necessary.',
   },
   {
-    ico: '🔬',
+    img: "/microscope.png",
     title: 'Advanced Technology',
     desc: 'We use the latest tools and techniques in the dental industry for exceptional care. Our advanced technology allows us to provide more options, streamline treatments, and minimize recovery time. Our state-of-the-art technology makes us one of the most advanced practices in Albuquerque.',
   },
@@ -55,17 +55,17 @@ const BENEFITS = [
 
 const TECH_ITEMS = [
   {
-    ico: '🦷',
+    img: "/tooth-1.png",
     title: 'CEREC',
     desc: 'Our CEREC® system creates durable, life-like restorations in a single appointment. By using digital impressions of your tooth, the CEREC system can create a dental crown that seamlessly blends in with your surrounding teeth — all in one visit.',
   },
   {
-    ico: '📡',
+    img: "/x-ray-test.png",
     title: 'Digital X-Rays',
     desc: 'Rather than standard X-rays that can take time to develop, digital X-rays send the images to your dentist\'s computer instantly. The images are crystal clear and can be enhanced so your dentist can review them quickly.',
   },
   {
-    ico: '🖥️',
+    img: "/ct-scan.png",
     title: 'Orthophos SL',
     desc: 'The Orthophos SL uses a single scan to produce 3D images of your teeth, soft tissue, nerve pathways, and bone — allowing Dr. Slaman to look for potential dental diseases or issues and determine jawbone density for implant candidacy.',
   },
@@ -120,17 +120,17 @@ const SERVICES = [
 
 const PAYMENT = [
   {
-    ico: '🏥',
+    img: "/insurance.png",
     title: 'Insurance',
     desc: 'We accept most major dental insurance plans to help you partially or completely cover the cost of treatment. Most plans will cover a portion of general and restorative dental procedures as they are considered medically necessary.',
   },
   {
-    ico: '💳',
+    img: "/credit-card.png",
     title: 'Financing',
     desc: 'We offer CareCredit® financing for those without insurance or those undergoing cosmetic treatments. CareCredit breaks your cost into no or low-interest monthly payments, allowing you to pay for dental care over time.',
   },
   {
-    ico: '📋',
+    img: "/plan.png",
     title: 'Payment Plans',
     desc: 'Our Albuquerque practice also offers in-office payment plans. Dr. Slaman and our friendly staff can work with you to create a payment plan that fits your financial needs and put you on a manageable timeline.',
   },
@@ -269,7 +269,9 @@ It was warm and friendly, you feel like you just made new friends that will quic
           {/* Address block */}
           <div className="lo-address-block">
             <div className="lo-addr-row">
-              <span className="lo-addr-ico">📍</span>
+              <span className="lo-addr-ico">
+                <img src="/pin.png" alt="" />
+              </span>
               <div>
                 <div className="lo-addr-lbl">Address</div>
                 <div className="lo-addr-val">
@@ -278,7 +280,9 @@ It was warm and friendly, you feel like you just made new friends that will quic
               </div>
             </div>
             <div className="lo-addr-row">
-              <span className="lo-addr-ico">📞</span>
+              <span className="lo-addr-ico">
+                <img src="/call.png" alt="" />
+              </span>
               <div>
                 <div className="lo-addr-lbl">Phone</div>
                 <div className="lo-addr-val">
@@ -354,7 +358,9 @@ It was warm and friendly, you feel like you just made new friends that will quic
         <div className="lo-benefits-grid">
           {BENEFITS.map((b, i) => (
             <div className="lo-benefit-card sr" key={b.title} style={{ transitionDelay: `${i * 0.1}s` }}>
-              <div className="lo-benefit-ico">{b.ico}</div>
+              <div className="lo-benefit-ico">
+                <img src={b.img} alt={b.title} />
+              </div>
               <h3 className="lo-benefit-title">{b.title}</h3>
               <p className="lo-benefit-desc">{b.desc}</p>
             </div>
@@ -379,7 +385,9 @@ It was warm and friendly, you feel like you just made new friends that will quic
         <div className="lo-tech-grid">
           {TECH_ITEMS.map((t, i) => (
             <div className="lo-tech-card sr" key={t.title} style={{ transitionDelay: `${i * 0.12}s` }}>
-              <div className="lo-tech-ico">{t.ico}</div>
+              <div className="lo-tech-ico">
+                <img src={t.img} alt={t.title} />
+              </div>
               <div className="lo-tech-num">0{i + 1}</div>
               <h3 className="lo-tech-title">{t.title}</h3>
               <p className="lo-tech-desc">{t.desc}</p>
@@ -530,7 +538,9 @@ It was warm and friendly, you feel like you just made new friends that will quic
         <div className="lo-payment-grid">
           {PAYMENT.map((p, i) => (
             <div className="lo-payment-card sr" key={p.title} style={{ transitionDelay: `${i * 0.1}s` }}>
-              <div className="lo-payment-ico">{p.ico}</div>
+              <div className="lo-payment-ico">
+                <img src={p.img} alt={p.title} />
+              </div>
               <h3 className="lo-payment-title">{p.title}</h3>
               <p className="lo-payment-desc">{p.desc}</p>
             </div>

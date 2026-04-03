@@ -126,6 +126,10 @@
   margin-top: .1rem;
 }
 
+.dr-hero-card-ico img {
+  width: 30px;
+}
+
 .dr-hero-card-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
@@ -202,6 +206,10 @@
 .dr-edu-ico {
   font-size: 1.6rem;
   margin-bottom: 1rem;
+}
+
+.dr-edu-ico img {
+  width: 70px;
 }
 
 .dr-edu-label {
@@ -469,6 +477,10 @@
 .dr-life-ico {
   font-size: 2rem;
   margin-bottom: 1.2rem;
+}
+
+.dr-life-ico img {
+  width: 70px;
 }
 
 /* ── TESTIMONIALS ─────────────────────────── */
@@ -804,6 +816,10 @@
   font-size: 1.5rem;
   flex-shrink: 0;
   margin-top: .1rem;
+}
+
+.dr-cta-ico img {
+  width: 40px;
 }
 
 .dr-cta-title {

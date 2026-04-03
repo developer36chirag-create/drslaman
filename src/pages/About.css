@@ -338,6 +338,10 @@
   font-size: 1.3rem;
 }
 
+.ab-visit-ico img {
+  width: 26px;
+}
+
 .ab-visit-card h3 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;

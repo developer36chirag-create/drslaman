@@ -10,17 +10,17 @@ import Doctorpanel from "../components/Doctorpanel";
 ───────────────────────────────────────── */
 const HIGHLIGHTS = [
   {
-    ico: '💡',
+    img: "/idea.png",
     title: 'The Latest Technology',
     desc: 'Dr. Slaman knows he can achieve the best results by using the latest technology. He even uses smile preview technology so patients can view the results of their cosmetic treatments before committing to anything.',
   },
   {
-    ico: '📚',
+    img: "/education.png",
     title: 'A Focus on Education',
     desc: 'Dr. Slaman wants all of his patients to be able to move forward with treatment confidently. He makes it a point to inform each of his patients of their options before proceeding with treatment.',
   },
   {
-    ico: '🛋️',
+    img: "/dentist-chair.png",
     title: 'Comfortable Dentistry',
     desc: 'We want you to maintain your oral and overall health in comfort, so we offer oral conscious sedation to patients who undergo surgical procedures. We also offer The Wand® anesthetic system for virtually painless injections.',
   },
@@ -28,19 +28,19 @@ const HIGHLIGHTS = [
 
 const EDUCATION = [
   {
-    ico: '🎓',
+    img: "/graduate-hat.png",
     label: 'Dental School',
     title: 'University of Missouri',
     desc: 'Dr. Slaman obtained his Doctorate in Dental Surgery at the University of Missouri.',
   },
   {
-    ico: '🔬',
+    img: "/microscope.png",
     label: 'Postgraduate Training',
     title: 'Continuing Education',
     desc: 'Dr. Slaman has continued his education by attending Dawson Academy, Spear Education, Southwest Academy of Esthetic Restorative Dentistry, and NM Implant Study Club.',
   },
   {
-    ico: '🤝',
+    img: "/handshake.png",
     label: 'Mentoring',
     title: 'Paying It Forward',
     desc: 'While James Slaman, DDS, is a lifelong learner, he is also paying it forward by acting as a mentor at Spear Education in Scottsdale so future generations can continue to advance the field of dentistry.',
@@ -118,9 +118,9 @@ const SERVICES = [
 ];
 
 const CTA_CARDS = [
-  { ico: '💬', title: 'Questions About Our Services?', sub: 'Send Us a Message', href: '#contact' },
-  { ico: '📞', title: 'Want to Speak to a Staff Member?', sub: 'Call Us', href: 'tel:+15058817586' },
-  { ico: '📅', title: 'Ready to Meet Our Dentist?', sub: 'Request a Consultation', href: '#contact' },
+  { img: "/chat.png", title: 'Questions About Our Services?', sub: 'Send Us a Message', href: '#contact' },
+  { img: "/call.png", title: 'Want to Speak to a Staff Member?', sub: 'Call Us', href: 'tel:+15058817586' },
+  { img: "/calendar.png", title: 'Ready to Meet Our Dentist?', sub: 'Request a Consultation', href: '#contact' },
 ];
 
 
@@ -177,7 +177,9 @@ export default function Doctor() {
           <div className="dr-hero-cards">
             {HIGHLIGHTS.map((h) => (
               <div className="dr-hero-card" key={h.title}>
-                <span className="dr-hero-card-ico">{h.ico}</span>
+                <span className="dr-hero-card-ico">
+                  <img src={h.img} alt={h.title} />
+                </span>
                 <div>
                   <div className="dr-hero-card-title">{h.title}</div>
                   <p className="dr-hero-card-desc">{h.desc}</p>
@@ -204,7 +206,9 @@ export default function Doctor() {
         <div className="dr-edu-grid">
           {EDUCATION.map((e, i) => (
             <div className={`dr-edu-card sr`} key={e.title} style={{ transitionDelay: `${i * 0.1}s` }}>
-              <div className="dr-edu-ico">{e.ico}</div>
+              <div className="dr-edu-ico">
+                <img src={e.img} alt={e.title} />
+              </div>
               <span className="dr-edu-label">{e.label}</span>
               <h3 className="dr-edu-title">{e.title}</h3>
               <p className="dr-edu-desc">{e.desc}</p>
@@ -317,7 +321,9 @@ export default function Doctor() {
       ══════════════════════════════════ */}
       <section className="dr-wrap dr-life-section">
         <div className="dr-life-card sr-left">
-          <div className="dr-life-ico">🏕️</div>
+          <div className="dr-life-ico">
+            <img src="/tent.png" alt="" />
+          </div>
           <p className="sec-tag">In His Free Time</p>
           <h3 className="sec-h" style={{ fontSize: '1.6rem' }}>
             Life Outside<br /><em>the Office</em>
@@ -329,7 +335,9 @@ export default function Doctor() {
           </p>
         </div>
         <div className="dr-life-card sr-right">
-          <div className="dr-life-ico">📍</div>
+          <div className="dr-life-ico">
+            <img src="/pin.png" alt="" />
+          </div>
           <p className="sec-tag">Location Story</p>
           <h3 className="sec-h" style={{ fontSize: '1.6rem' }}>
             Why Alameda<br /><em>Blvd NE?</em>
@@ -460,7 +468,9 @@ export default function Doctor() {
         <div className="dr-cta-grid">
           {CTA_CARDS.map((c, i) => (
             <a className="dr-cta-card sr" href={c.href} key={c.title} style={{ transitionDelay: `${i * 0.1}s` }}>
-              <span className="dr-cta-ico">{c.ico}</span>
+              <span className="dr-cta-ico">
+                <img src={c.img} alt={c.title} />
+              </span>
               <div>
                 <div className="dr-cta-title">{c.title}</div>
                 <div className="dr-cta-sub">{c.sub} →</div>
