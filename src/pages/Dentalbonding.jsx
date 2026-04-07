@@ -75,17 +75,17 @@ const PROCESS_STEPS = [
 
 const DR_QUALITIES = [
   {
-    ico: '🏅',
+    img: "/medal-ribbon.png",
     title: 'Highest Standards',
     desc: 'Dr. Slaman is a distinguished restorative and cosmetic dentist who has been serving the needs of his hometown for more than two decades, always setting the bar higher.',
   },
   {
-    ico: '🔍',
+    img: "/magnifying-glass.png",
     title: 'Attention to Detail',
     desc: 'His attention to detail extends to the dental practice, which offers thoughtful amenities such as warm blankets, headphones, specialty coffee, and filtered water.',
   },
   {
-    ico: '💳',
+    img: "/credit-card-2.png",
     title: 'Sensitive to Costs',
     desc: 'Dr. Slaman accepts a variety of insurance plans and offers CareCredit® financing and in-office payment plans to make dental services available to the widest range of people.',
   },
@@ -391,7 +391,9 @@ export default function DentalBonding() {
                   key={q.title}
                   style={{ transitionDelay: `${i * 0.1}s` }}
                 >
-                  <span className="db-dr-quality-ico">{q.ico}</span>
+                  <span className="db-dr-quality-ico">
+                  <img src={q.img} alt={q.title} />
+                  </span>
                   <div>
                     <div className="db-dr-quality-title">{q.title}</div>
                     <p className="db-dr-quality-desc">{q.desc}</p>

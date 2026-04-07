@@ -10,7 +10,7 @@ import Doctorpanel from "../components/Doctorpanel";
 ───────────────────────────────────────── */
 const HERO_CHIPS = [
   { ico: '⚡', label: 'Laser Precision' },
-  { ico: '😌', label: 'Virtually Pain-Free' },
+  { ico: '😌', label: 'Virtually Pain-Free' }, 
   { ico: '🔄', label: 'Faster Recovery' },
   { ico: '🎨', label: 'Dramatic Results' },
 ];
@@ -24,12 +24,12 @@ const BADGES = [
 
 const BASICS = [
   {
-    ico: '🔬',
+    img: "/gingivitis.png",
     title: 'Reshaping the Gums',
     desc: 'Gum contouring safely reshapes your gums to produce a healthy and beautiful frame for your teeth. Once performed with a scalpel, advanced technology now allows us to complete the sculpting process with a soft tissue dental laser — safer, faster, and with minimal recovery.',
   },
   {
-    ico: '✨',
+    img: "/tooth-2.png",
     title: 'Improving Smile Aesthetics',
     desc: 'Thanks to periodontal contouring, we can improve the tooth-to-gum ratio of your smile. This leads to a more balanced, proportionate appearance. Treatment can also be combined with veneers or whitening for a more comprehensive smile makeover.',
   },
@@ -38,25 +38,21 @@ const BASICS = [
 const CANDIDATES = [
   {
     num: '01',
-    ico: '🦷',
     title: 'Good Dental Health',
     desc: 'Healthy teeth and gums are necessary to undergo any cosmetic treatment. During a consultation, Dr. Slaman will ensure that you do not have active tooth decay or gum disease before proceeding.',
   },
   {
     num: '02',
-    ico: '😁',
     title: 'Gummy Smiles',
     desc: 'If you have a gummy smile, undergoing this dental procedure can effectively lengthen each affected tooth. Gum contouring reduces gum prominence for a more natural-looking, confident appearance.',
   },
   {
     num: '03',
-    ico: '📐',
     title: 'Asymmetrical Gum Line',
     desc: 'An asymmetrical gum line can make your teeth appear uneven and poorly shaped. Gum contouring will sculpt your gums, making your smile appear more uniform and balanced in the process.',
   },
   {
     num: '04',
-    ico: '👑',
     title: 'Crown Lengthening',
     desc: 'In some cases, additional tooth structure must be uncovered to prep for a restoration, such as a dental crown. Gum therapy is useful in removing small amounts of soft tissue for a proper fit.',
   },
@@ -64,17 +60,17 @@ const CANDIDATES = [
 
 const EXPERIENCE_CARDS = [
   {
-    ico: '🔬',
+    img: "/laser.png",
     title: 'Laser Technology',
     desc: 'Laser dentistry with Waterlase allows for very precise removal of excess gum tissue. With no scalpel needed, the contouring procedure is safer and faster, and recovery is easier than ever before.',
   },
   {
-    ico: '😴',
+    img: "/sleep.png",
     title: 'Sedation Dentistry',
     desc: 'Some patients may feel stressed during dental visits. That\'s why we offer oral conscious sedation. This sedation method helps patients feel completely relaxed during procedures for a truly comfortable experience.',
   },
   {
-    ico: '💳',
+    img: "/credit-card.png",
     title: 'Payment Options',
     desc: 'To make cosmetic gum reshaping affordable, we\'re proud to accept CareCredit® financing and offer in-office payment plans. These options will help you get the smile you deserve without financial stress.',
   },
@@ -82,32 +78,26 @@ const EXPERIENCE_CARDS = [
 
 const LASER_BENEFITS = [
   {
-    ico: '🩹',
     title: 'Reduced Discomfort',
     desc: 'Laser gum contouring is safe and virtually pain-free. In fact, for many patients, local anesthetic is not even necessary.',
   },
   {
-    ico: '🩸',
     title: 'Less Bleeding',
     desc: 'The soft tissue laser cauterizes while making an incision, which means less bleeding both during and after the surgery.',
   },
   {
-    ico: '🎯',
     title: 'Greater Accuracy',
     desc: 'Dental lasers give dentists more control and precision than scalpels, meaning an even lower risk of human error.',
   },
   {
-    ico: '🛡️',
     title: 'Low Infection Risk',
     desc: 'Since dental lasers cauterize tissue while making cuts, the procedure is extremely sterile, with low risk of infection.',
   },
   {
-    ico: '💨',
     title: 'Minimal Side Effects',
     desc: 'When recovering from laser contouring, patients experience less severe swelling, discomfort, and other side effects.',
   },
   {
-    ico: '⚡',
     title: 'Faster Healing',
     desc: 'With no stitches and less bleeding, laser contouring patients heal faster than gum reshaping patients of the past.',
   },
@@ -235,7 +225,9 @@ export default function GumContouring() {
               key={b.title}
               style={{ transitionDelay: `${i * 0.12}s` }}
             >
-              <div className="gc-basics-card-ico">{b.ico}</div>
+              <div className="gc-basics-card-ico">
+              <img src={b.img} alt={b.title} />
+              </div>
               <h3 className="gc-basics-card-title">{b.title}</h3>
               <p className="gc-basics-card-desc">{b.desc}</p>
             </div>
@@ -269,7 +261,6 @@ export default function GumContouring() {
             >
               <div className="gc-candidate-top">
                 <span className="gc-candidate-num">{c.num}</span>
-                <span className="gc-candidate-ico">{c.ico}</span>
               </div>
               <h3 className="gc-candidate-title">{c.title}</h3>
               <p className="gc-candidate-desc">{c.desc}</p>
@@ -368,7 +359,9 @@ export default function GumContouring() {
               key={e.title}
               style={{ transitionDelay: `${i * 0.12}s` }}
             >
-              <div className="gc-experience-ico">{e.ico}</div>
+              <div className="gc-experience-ico">
+                <img src={e.img} alt={e.title} />
+              </div>
               <h3 className="gc-experience-title">{e.title}</h3>
               <p className="gc-experience-desc">{e.desc}</p>
             </div>
@@ -408,7 +401,6 @@ export default function GumContouring() {
               key={b.title}
               style={{ transitionDelay: `${i * 0.08}s` }}
             >
-              <div className="gc-laser-card-ico">{b.ico}</div>
               <div className="gc-laser-card-num">0{i + 1}</div>
               <h3 className="gc-laser-card-title">{b.title}</h3>
               <p className="gc-laser-card-desc">{b.desc}</p>

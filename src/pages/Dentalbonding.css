@@ -20,7 +20,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  /* background-image: url(/drslaman/public/download-main.png); */
 }
 
 .db-advantage-card {
@@ -456,6 +455,10 @@
 }
 
 .db-dr-quality-ico { font-size: 1.4rem; flex-shrink: 0; }
+
+.db-dr-quality-ico img {
+  width: 40px;
+}
 
 .db-dr-quality-title {
   font-family: 'Cormorant Garamond', serif;

@@ -18,7 +18,7 @@
   grid-template-columns: 1fr 1fr;
   min-height: 58vh;
   overflow: hidden;
-  /* background-image: url(/drslaman/public/photo-1606811841689-23dfddce3e95.jpg); */
+  /* background-image: url(/drslaman/public/credit-card.png); */
 }
 
 .gc-basics-copy {
@@ -72,6 +72,10 @@
 .gc-basics-card:hover::after { transform: scaleX(1); }
 
 .gc-basics-card-ico { font-size: 1.6rem; margin-bottom: .9rem; }
+
+.gc-basics-card-ico img {
+  width: 70px;
+}
 
 .gc-basics-card-title {
   font-family: 'Cormorant Garamond', serif;
@@ -144,7 +148,7 @@
   font-size: 4.5rem;
   font-weight: 300;
   line-height: 1;
-  color: rgba(212,191,160,.18);
+  color: #0a080433;
   user-select: none;
 }
 
@@ -335,6 +339,10 @@
 .gc-experience-card:hover::before { transform: scaleX(1); }
 
 .gc-experience-ico { font-size: 1.8rem; margin-bottom: 1.1rem; }
+
+.gc-experience-ico img {
+  width: 70px;
+}
 
 .gc-experience-title {
   font-family: 'Cormorant Garamond', serif;
