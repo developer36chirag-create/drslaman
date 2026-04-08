@@ -9,7 +9,7 @@ nav {
   transition: height .3s, box-shadow .3s, background .3s;
 }
 nav.scrolled {
-  height: 54px; background: rgba(253,250,245,.99);
+  background: rgba(253,250,245,.99);
   box-shadow: 0 4px 32px rgba(28,20,16,.1);
   border-bottom-color: rgba(212,191,160,.28);
 }

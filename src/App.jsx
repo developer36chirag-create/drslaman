@@ -19,6 +19,7 @@ import Officesection from "./components/Officesection";
 import Doctorpanel from "./components/Doctorpanel";
 import Smilemakeover from './pages/Smilemakeover'
 import Teethwhitening from './pages/Teethwhitening'
+import Veneers from './pages/Veneers'
 
 import "./App.css";
 
@@ -86,6 +87,7 @@ export default function App() {
         <Route path="/services/gum-contouring"   element={<Gumcontouring />} />
         <Route path="/services/smile-makeover"   element={<Smilemakeover />} />
         <Route path="/services/teeth-whitening"         element={<Teethwhitening />} />
+        <Route path="/services/veneers"           element={<Veneers />} />
       </Routes>
       {/* ✅ ROUTING ENDS HERE */}
 
