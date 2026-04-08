@@ -603,7 +603,7 @@ export default function PorcelainVeneers() {
             <h2 className="sec-h" style={{ color: '#fff' }}>
               Dental Veneers Can<br /><em style={{ color: 'var(--c-sand)' }}>Improve Your Teeth in Many Ways</em>
             </h2>
-            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)', marginTop: '.8rem', maxWidth: '44ch' }}>
+            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)' }}>
               Let dental veneers from our Albuquerque, NM, office conceal flaws like:
             </p>
           </div>
@@ -686,7 +686,7 @@ export default function PorcelainVeneers() {
           <h2 className="sec-h">
             Factors Affecting<br /><em>Cost</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.8rem' }}>
+          <p className="sec-body" >
             The three most significant cost variables for veneers are below. Dr. Slaman
             offers in-office 90-day financing, and our staff can also help you coordinate
             low-interest and interest-free financing through CareCredit®.
@@ -769,7 +769,7 @@ export default function PorcelainVeneers() {
             <h2 className="sec-h" style={{ color: '#fff' }}>
               Porcelain Veneer<br /><em style={{ color: 'var(--c-sand)' }}>Treatment Timeline</em>
             </h2>
-            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)', marginTop: '.8rem', maxWidth: '48ch' }}>
+            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)' }}>
               Most of our patients can receive their final restorations in as little as
               two weeks. When you choose our dental office in Albuquerque for veneers,
               you can expect your treatment to consist of several steps:
