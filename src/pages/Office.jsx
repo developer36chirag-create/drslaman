@@ -261,7 +261,7 @@ It was warm and friendly, you feel like you just made new friends that will quic
             The Search for a<br />
             <em>Quality Dentist is Over</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.8rem', maxWidth: '44ch' }}>
+          <p className="sec-body" >
             Visit our Albuquerque, NM practice for top-rated dental care that your whole
             family can trust.
           </p>
@@ -377,7 +377,7 @@ It was warm and friendly, you feel like you just made new friends that will quic
           <h2 className="sec-h" style={{ color: '#fff' }}>
             The Latest in<br /><em style={{ color: 'var(--c-sand)' }}>Dental Technology</em>
           </h2>
-          <p className="sec-body" style={{ color: 'rgba(245,240,232,.52)', marginTop: '.8rem' }}>
+          <p className="sec-body" style={{ color: 'rgba(245,240,232,.52)' }}>
             For the best patient care — Dr. Slaman invests in the most advanced tools so
             every visit is faster, more accurate, and more comfortable.
           </p>
@@ -413,7 +413,7 @@ It was warm and friendly, you feel like you just made new friends that will quic
             Experience Comprehensive<br />
             Dentistry in <em>Albuquerque</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.6rem' }}>
+          <p className="sec-body" >
             Our Albuquerque practice can handle virtually any dental care need, no matter the
             state of your oral health. From general cleanings and root canal therapy to teeth
             whitening and dental implants, our award-winning dentist can help you reach your
@@ -464,7 +464,7 @@ It was warm and friendly, you feel like you just made new friends that will quic
           <h2 className="sec-h">
             Featured Dental<br /><em>Services</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.6rem' }}>
+          <p className="sec-body">
             Our office offers general, restorative, and cosmetic dentistry treatments to
             help you enhance the health and appearance of your teeth and gums.
           </p>

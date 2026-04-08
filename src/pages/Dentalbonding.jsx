@@ -217,7 +217,7 @@ export default function DentalBonding() {
               Create a More Beautiful<br />
               <em style={{ color: 'var(--c-sand)' }}>Smile With Dental Bonding</em>
             </h2>
-            <p className="sec-body" style={{ color: 'rgba(245,240,232,.58)', marginTop: '.8rem' }}>
+            <p className="sec-body" style={{ color: 'rgba(245,240,232,.58)' }}>
               Cosmetic dentist James Slaman in Albuquerque, NM, skillfully applies bonding material to close gaps between teeth and create a more beautiful smile.  
             </p>
             <a href="#db-contact" className="btn btn-fill"
@@ -265,7 +265,7 @@ export default function DentalBonding() {
           <h2 className="sec-h">
             What Problems Can<br /><em>Dental Bonding Solve?</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.8rem' }}>
+          <p className="sec-body" >
             Dental bonding is a simple cosmetic dentistry procedure in which a tooth-colored
             resin is applied to your tooth. It is shaped and then hardened with a special light.
             This step "bonds" the material to the tooth.
@@ -375,7 +375,7 @@ export default function DentalBonding() {
               Put Your Smile in the<br />
               <em style={{ color: 'var(--c-sand)' }}>Hands of a Cosmetic Dentist</em>
             </h2>
-            <p className="sec-body" style={{ color: 'rgba(245,240,232,.58)', marginTop: '.6rem' }}>
+            <p className="sec-body" style={{ color: 'rgba(245,240,232,.58)' }}>
               People aspiring to a more beautiful smile should look to a cosmetic dentist who
               holds himself to the highest standards. Dr. Slaman in Albuquerque, NM, is a
               distinguished restorative and cosmetic dentist who has been{' '}
@@ -462,7 +462,7 @@ export default function DentalBonding() {
             <h2 className="sec-h" style={{ color: '#fff' }}>
               The Dental Bonding<br /><em style={{ color: 'var(--c-sand)' }}>Treatment Process</em>
             </h2>
-            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)', marginTop: '.8rem' }}>
+            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)' }}>
               The first step is scheduling a consultation to discuss your goals. During this
               visit, Dr. Slaman will examine your teeth and gums and go over your options.
               The treatment itself is simple, straightforward, and among the easiest and least
@@ -505,7 +505,7 @@ export default function DentalBonding() {
             <h2 className="sec-h" style={{ color: '#fff' }}>
               Related<br /><em style={{ color: 'var(--c-sand)' }}>Services</em>
             </h2>
-            <p className="sec-body" style={{ color: 'rgba(245,240,232,.5)', marginTop: '.8rem' }}>
+            <p className="sec-body" style={{ color: 'rgba(245,240,232,.5)' }}>
               Dental bonding is one of many cosmetic treatments Dr. Slaman offers to help
               you achieve your perfect smile.
             </p>

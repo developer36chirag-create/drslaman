@@ -203,7 +203,7 @@ export default function GumContouring() {
           <h2 className="sec-h">
             What Is<br /><em>Gum Contouring?</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.8rem' }}>
+          <p className="sec-body" >
             A prominent gum line can affect the appearance of your smile. Prominent gums can
             also harbor bacteria, making your gums red and swollen, and increasing your risk
             for gum disease. Gum contouring can address both of these issues — and more.
@@ -295,7 +295,7 @@ export default function GumContouring() {
           </h2>
           <p
             className="sec-body"
-            style={{ color: 'rgba(245,240,232,.58)', marginTop: '.8rem'}}
+            style={{ color: 'rgba(245,240,232,.58)' }}
           >
             Dr. Slaman has high standards and more than 25 years of experience. His
             Albuquerque dental center is committed to advanced, patient-centered dentistry.
@@ -344,7 +344,7 @@ export default function GumContouring() {
           <h2 className="sec-h">
             Improving Patient Experience<br /><em>During Treatment</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.8rem' }}>
+          <p className="sec-body">
             Dr. Slaman has high standards and more than 25 years of experience. His Albuquerque
             dental center is committed to advanced, patient-centered dentistry. In addition to
             blankets, headphones, and other amenities in the waiting room, here are three ways we

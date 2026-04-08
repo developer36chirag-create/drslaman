@@ -141,7 +141,7 @@ export default function CosmeticDentistry() {
         <div className="cd-ba-left sr-left">
           <p className="sec-tag">Real Results</p>
           <h2 className="sec-h">Enhance Your Smile<br /><em>With Cosmetic Dentistry</em></h2>
-          <p className="sec-body" style={{marginTop:'.8rem'}}>Dr. Slaman combined cosmetic techniques to create stunning transformations for patients just like you. He can give you similarly gorgeous results through a customized cosmetic treatment plan.</p>
+          <p className="sec-body" >Dr. Slaman combined cosmetic techniques to create stunning transformations for patients just like you. He can give you similarly gorgeous results through a customized cosmetic treatment plan.</p>
           <blockquote className="cd-ba-quote">
             <div className="cd-ba-stars">★★★★★</div>
             <p>"It is always a pleasure going to Dr. Slaman's office. Everyone is so nice and professional. They treat you like family."</p>
@@ -192,7 +192,7 @@ export default function CosmeticDentistry() {
         <div className="cd-preview-copy sr-right">
           <p className="sec-tag" style={{color:'var(--c-sand)'}}>Our Technology</p>
           <h2 className="sec-h" style={{color:'#fff'}}>Feel Confident Committing<br /><em style={{color:'var(--c-sand)'}}>With a Smile Preview</em></h2>
-          <p className="sec-body" style={{color:'rgba(245,240,232,.55)',marginTop:'.8rem'}}>We know cosmetic dentistry can be an investment in your smile, so our Albuquerque team wants every patient to feel confident before moving forward. Our office uses smile preview technology that allows you to get a clear idea of the results before committing to anything.</p>
+          <p className="sec-body" style={{color:'rgba(245,240,232,.55)'}}>We know cosmetic dentistry can be an investment in your smile, so our Albuquerque team wants every patient to feel confident before moving forward. Our office uses smile preview technology that allows you to get a clear idea of the results before committing to anything.</p>
           <a href="#cd-contact" className="btn btn-fill" style={{alignSelf:'flex-start',marginTop:'.6rem'}}>See Your New Smile →</a>
         </div>
       </section>
@@ -233,7 +233,7 @@ export default function CosmeticDentistry() {
         <div className="cd-treatments-header sr">
           <p className="sec-tag">What We Offer</p>
           <h2 className="sec-h">Cosmetic Dentistry<br /><em>Treatments</em></h2>
-          <p className="sec-body" style={{marginTop:'.8rem'}}>Our dentist James Slaman offers a number of customized treatments that can rejuvenate your smile — some can even be done in the comfort of your own home.</p>
+          <p className="sec-body" >Our dentist James Slaman offers a number of customized treatments that can rejuvenate your smile — some can even be done in the comfort of your own home.</p>
         </div>
         <div className="cd-treatments-list">
           {TREATMENTS.map((t,idx) => (
@@ -258,7 +258,7 @@ export default function CosmeticDentistry() {
         <div className="cd-candidacy-header sr">
           <p className="sec-tag">Are You a Candidate?</p>
           <h2 className="sec-h">Request a Consultation<br /><em>to Find Out</em></h2>
-          <p className="sec-body" style={{marginTop:'.8rem'}}>Virtually anyone who wants a brighter, more uniform, or more proportionate smile is a good candidate. Dr. Slaman considers several factors before approving a patient for cosmetic treatment:</p>
+          <p className="sec-body" >Virtually anyone who wants a brighter, more uniform, or more proportionate smile is a good candidate. Dr. Slaman considers several factors before approving a patient for cosmetic treatment:</p>
         </div>
         <div className="cd-candidacy-grid">
           {CANDIDACY.map((c,i) => (
@@ -282,7 +282,7 @@ export default function CosmeticDentistry() {
         <div className="cd-insurance-copy sr-left">
           <p className="sec-tag" style={{color:'var(--c-sand)'}}>Affordability</p>
           <h2 className="sec-h" style={{color:'#fff'}}>Does Insurance Cover<br /><em style={{color:'var(--c-sand)'}}>Cosmetic Dentistry?</em></h2>
-          <p className="sec-body" style={{color:'rgba(245,240,232,.55)',marginTop:'.8rem'}}>Dental insurance generally will not cover a treatment unless it is considered medically necessary. Because cosmetic dentistry is elective, it is rarely covered. However, if your cosmetic treatment has a restorative benefit, you may receive partial coverage.</p>
+          <p className="sec-body" style={{color:'rgba(245,240,232,.55)'}}>Dental insurance generally will not cover a treatment unless it is considered medically necessary. Because cosmetic dentistry is elective, it is rarely covered. However, if your cosmetic treatment has a restorative benefit, you may receive partial coverage.</p>
           <p className="sec-body" style={{color:'rgba(245,240,232,.55)'}}>Dr. Slaman proudly offers affordable monthly financing through <strong style={{color:'rgba(245,240,232,.8)'}}>CareCredit®</strong> as well as convenient in-office payment plans. His warm and knowledgeable staff will happily go over all your available payment options.</p>
           <a href="#cd-contact" className="btn btn-fill" style={{alignSelf:'flex-start',marginTop:'.6rem'}}>Explore Payment Options</a>
         </div>
@@ -329,7 +329,7 @@ export default function CosmeticDentistry() {
         <div className="cd-sedation-copy sr-right">
           <p className="sec-tag">Patient Comfort</p>
           <h2 className="sec-h">Will My Cosmetic<br /><em>Treatment Hurt?</em></h2>
-          <p className="sec-body" style={{marginTop:'.6rem'}}>If you are worried that improving your smile will be a painful process, there is nothing to fear. Most cosmetic treatments are minimally invasive and involve very little discomfort. Your comfort will always be our priority.</p>
+          <p className="sec-body" >If you are worried that improving your smile will be a painful process, there is nothing to fear. Most cosmetic treatments are minimally invasive and involve very little discomfort. Your comfort will always be our priority.</p>
           <div className="cd-sedation-box">
             <div className="cd-sedation-box-ico">
               <img src="/capsules.png" alt="" />
@@ -348,7 +348,7 @@ export default function CosmeticDentistry() {
         <div className="cd-aftercare-header sr">
           <p className="sec-tag">Maintaining Your Results</p>
           <h2 className="sec-h">Making the Most of<br /><em>Your Treatment</em></h2>
-          <p className="sec-body" style={{marginTop:'.8rem'}}>There are some simple things you can do to maintain your results and prolong the effects of your cosmetic dentistry treatment:</p>
+          <p className="sec-body" >There are some simple things you can do to maintain your results and prolong the effects of your cosmetic dentistry treatment:</p>
         </div>
         <div className="cd-aftercare-grid">
           {AFTERCARE.map((a,i) => (
@@ -369,8 +369,8 @@ export default function CosmeticDentistry() {
         <div className="cd-ba-left sr-left">
           <p className="sec-tag">for Patients Just Like You</p>
           <h2 className="sec-h">See What Cosmetic<br /><em>Dentistry Can Do</em></h2>
-          <p className="sec-body" style={{marginTop:'.8rem'}}>Dr. Slaman combined cosmetic techniques to create a stunning transformation for this New Mexico patient.</p>
-        <p className="sec-body" style={{marginTop:'.8rem'}}>Dr. Slaman regularly completes smile transformations just like this one. He can give you similarly gorgeous results through a customized cosmetic treatment plan. Take the first step towards rejuvenating your smile by contacting us online or calling (505) 881-7586.</p>
+          <p className="sec-body" >Dr. Slaman combined cosmetic techniques to create a stunning transformation for this New Mexico patient.</p>
+        <p className="sec-body" >Dr. Slaman regularly completes smile transformations just like this one. He can give you similarly gorgeous results through a customized cosmetic treatment plan. Take the first step towards rejuvenating your smile by contacting us online or calling (505) 881-7586.</p>
           <a href="#cd-contact" className="btn btn-fill" style={{alignSelf:'flex-start',marginTop:'.5rem'}}>Explore More Before &amp; After Photos</a>
         </div>
         <div className="cd-ba-right sr-right">
@@ -390,7 +390,7 @@ export default function CosmeticDentistry() {
         <div className="cd-implants-copy sr-left">
           <p className="sec-tag" style={{color:'var(--c-sand)'}}>Missing Teeth?</p>
           <h2 className="sec-h" style={{color:'#fff'}}>We Can Fill in the Gaps<br /><em style={{color:'var(--c-sand)'}}>With Dental Implants</em></h2>
-          <p className="sec-body" style={{color:'rgba(245,240,232,.55)',marginTop:'.8rem'}}>The best of cosmetic and restorative dentistry meet in dental implants — the most reliable solution for tooth loss. Titanium implants anchor into the jawbone to replace missing tooth roots and provide much-needed stimulation to the jaw tissue.</p>
+          <p className="sec-body" style={{color:'rgba(245,240,232,.55)'}}>The best of cosmetic and restorative dentistry meet in dental implants — the most reliable solution for tooth loss. Titanium implants anchor into the jawbone to replace missing tooth roots and provide much-needed stimulation to the jaw tissue.</p>
           <p className="sec-body" style={{color:'rgba(245,240,232,.55)'}}>Whether you are missing one tooth or many, we have a dental implant treatment that can restore your smile in a way that looks and feels natural.</p>
           <a href="#cd-contact" className="btn btn-fill" style={{alignSelf:'flex-start',marginTop:'.6rem'}}>More on the Benefits of Dental Implants</a>
         </div>

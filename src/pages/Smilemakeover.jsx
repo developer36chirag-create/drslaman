@@ -279,7 +279,7 @@ export default function SmileMakeover() {
           <h2 className="sec-h">
             What Is a<br /><em>Smile Makeover?</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.8rem' }}>
+          <p className="sec-body" >
             A smile makeover is a custom-designed treatment plan that combines multiple
             cosmetic procedures to fully enhance the appearance of your smile. At our
             Albuquerque dental office, a smile makeover can use treatments targeting your
@@ -306,7 +306,7 @@ export default function SmileMakeover() {
           <h2 className="sec-h">
             Why Combine Multiple<br /><em>Cosmetic Dentistry Procedures?</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.6rem', maxWidth: '52ch' }}>
+          <p className="sec-body">
             Our Albuquerque patients often decide to bundle together several cosmetic
             procedures at once. That's because a smile makeover from our team is more:
           </p>
@@ -344,7 +344,7 @@ export default function SmileMakeover() {
               What Can We Refine<br />
               <em style={{ color: 'var(--c-sand)' }}>With a Smile Makeover?</em>
             </h2>
-            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)', marginTop: '.8rem', maxWidth: '44ch' }}>
+            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)' }}>
               If your smile is affected by any of the following aesthetic concerns, you may
               be a good candidate for a smile makeover.
             </p>
@@ -377,7 +377,7 @@ export default function SmileMakeover() {
           <h2 className="sec-h">
             Commonly Combined<br /><em>Treatments</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.8rem', maxWidth: '52ch' }}>
+          <p className="sec-body" >
             A smile makeover is different for each patient. Dr. Slaman will help you select
             cosmetic procedures to address your specific needs and goals.
           </p>
@@ -586,7 +586,7 @@ export default function SmileMakeover() {
           <h2 className="sec-h">
             How Do I Know If I'm a<br /><em>Smile Makeover Candidate?</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '.8rem', maxWidth: '54ch' }}>
+          <p className="sec-body" >
             The only way to find out for sure is to visit Dr. Slaman for a free consultation.
             Until then, it can help to know what we look for in an eligible smile makeover patient:
           </p>
@@ -634,7 +634,7 @@ export default function SmileMakeover() {
             <h2 className="sec-h" style={{ color: '#fff' }}>
               Smile Makeover<br /><em style={{ color: 'var(--c-sand)' }}>Timeline</em>
             </h2>
-            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)', marginTop: '.8rem', maxWidth: '48ch' }}>
+            <p className="sec-body" style={{ color: 'rgba(245,240,232,.55)' }}>
               Because each treatment plan is unique, different patients experience different
               treatment timelines. Regardless, every patient can expect these stages.
             </p>
@@ -730,7 +730,7 @@ export default function SmileMakeover() {
             <h2 className="sec-h" style={{ color: '#fff' }}>
               Related<br /><em style={{ color: 'var(--c-sand)' }}>Services</em>
             </h2>
-            <p className="sec-body" style={{ color: 'rgba(245,240,232,.5)', marginTop: '.8rem', maxWidth: '30ch' }}>
+            <p className="sec-body" style={{ color: 'rgba(245,240,232,.5)' }}>
               A smile makeover draws from many cosmetic treatments. Explore each one in detail.
             </p>
           </div>

@@ -29,7 +29,7 @@ const COLS = [
       { label: 'Dental Bonding', href: '/services/dental-bonding' },
       { label: 'Gum Contouring', href: '/services/gum-contouring' },
       { label: 'Smile Makeover', href: '/services/smile-makeover' },
-      { label: 'Teeth Whitening', href: '#' },
+      { label: 'Teeth Whitening', href: '/services/teeth-whitening' },
       { label: 'Veneers', href: '#' },
     ],
   },

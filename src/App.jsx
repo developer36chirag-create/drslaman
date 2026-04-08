@@ -18,6 +18,7 @@ import Contactform from "./components/Contactform";
 import Officesection from "./components/Officesection";
 import Doctorpanel from "./components/Doctorpanel";
 import Smilemakeover from './pages/Smilemakeover'
+import Teethwhitening from './pages/Teethwhitening'
 
 import "./App.css";
 
@@ -84,6 +85,7 @@ export default function App() {
         <Route path="/services/dental-bonding"  element={<Dentalbonding />} />
         <Route path="/services/gum-contouring"   element={<Gumcontouring />} />
         <Route path="/services/smile-makeover"   element={<Smilemakeover />} />
+        <Route path="/services/teeth-whitening"         element={<Teethwhitening />} />
       </Routes>
       {/* ✅ ROUTING ENDS HERE */}
 

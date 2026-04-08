@@ -42,7 +42,7 @@ img { display: block; max-width: 100%; }
 }
 .sec-h em { font-style: italic; color: var(--c-terra); }
 
-.sec-body { font-size: .9rem; color: var(--c-muted); line-height: 1.78; margin-top: .8rem; }
+.sec-body { font-size: .9rem; color: var(--c-muted); line-height: 1.78; margin-top: 0rem; }
 
 /* ─── BUTTONS ─────────────────────────────────────────── */
 .btn {

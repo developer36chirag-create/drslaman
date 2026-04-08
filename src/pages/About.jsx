@@ -383,7 +383,7 @@ export default function About() {
           <h2 className="sec-h">
             Improve Your Overall Health<br /><em>and Quality of Life</em>
           </h2>
-          <p className="sec-body" style={{ marginTop: '1rem', maxWidth: '60ch' }}>
+          <p className="sec-body" >
             Certain dental and health conditions may prevent you from enjoying life to the fullest.
             These treatments can offer life-changing results for patients:
           </p>

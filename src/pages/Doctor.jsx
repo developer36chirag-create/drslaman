@@ -168,7 +168,7 @@ export default function Doctor() {
             With <em>Dr. James Slaman</em><br />
             <span className="dr-hero-sub">DDS, PC — Albuquerque, NM</span>
           </h1>
-          <p className="sec-body" style={{ marginTop: '1rem' }}>
+          <p className="sec-body" >
             A cosmetic dentist, community leader, and lifelong Albuquerque native who has been
             crafting beautiful, healthy smiles since 1992.
           </p>
@@ -342,7 +342,7 @@ export default function Doctor() {
           <h3 className="sec-h" style={{ fontSize: '1.6rem' }}>
             Why Alameda<br /><em>Blvd NE?</em>
           </h3>
-          <p className="sec-body" style={{ marginTop: '.8rem' }}>
+          <p className="sec-body" >
             Dr. James Slaman is an Albuquerque native who wanted to provide his services to the
             community where he grew up. Dr. Slaman is recognized by his peers as the best dentist
             in Albuquerque. He is a three-time recipient of{' '}
