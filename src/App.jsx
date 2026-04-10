@@ -21,6 +21,7 @@ import Smilemakeover from './pages/Smilemakeover'
 import Teethwhitening from './pages/Teethwhitening'
 import Veneers from './pages/Veneers'
 import Restorativedentistry from './pages/Restorativedentistry'
+import Bonegrafting from './pages/Bonegrafting'
 
 import "./App.css";
 
@@ -90,6 +91,7 @@ export default function App() {
         <Route path="/services/teeth-whitening"         element={<Teethwhitening />} />
         <Route path="/services/veneers"           element={<Veneers />} />
         <Route path="/services/restorative-dentistry"          element={<Restorativedentistry />} />
+        <Route path="/services/bone-grafting"        element={<Bonegrafting />} />
       </Routes>
       {/* ✅ ROUTING ENDS HERE */}
 
