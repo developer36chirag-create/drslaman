@@ -6,6 +6,12 @@
    .visible from index.css
 ══════════════════════════════════════════════ */
 
+.tw-video-header, .tw-options-header, .tw-reviews-header-content-box, .tw-internal-copy, .tw-timeline-header, .tw-faq-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
 /* ── S1 HERO ──────────────────────────────── */
 
 

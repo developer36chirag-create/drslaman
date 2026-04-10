@@ -240,7 +240,7 @@ export default function GumContouring() {
       ══════════════════════════════════ */}
       <section className="gc-wrap gc-candidates-section">
         <div className="gc-candidates-header sr">
-          <div>
+          <div className='gc-candidates-header-content-box'>
             <p className="sec-tag">Is It Right for You?</p>
             <h2 className="sec-h">
               Good Candidates for<br /><em>Gum Contouring</em>
@@ -385,7 +385,6 @@ export default function GumContouring() {
             className="sec-body"
             style={{
               color: 'rgba(245,240,232,.52)',
-              marginTop: '.8rem',
             }}
           >
             Laser gum contouring boasts many advantages over the techniques of the past.
@@ -420,7 +419,7 @@ export default function GumContouring() {
       ══════════════════════════════════ */}
       <section className="gc-reviews-section">
         <div className="gc-reviews-header sr">
-          <div>
+          <div className='gc-reviews-header-content-box'>
             <p className="sec-tag">5-Star Reviews</p>
             <h2 className="sec-h">
               100s of 5-Star<br /><em>Google Reviews</em>

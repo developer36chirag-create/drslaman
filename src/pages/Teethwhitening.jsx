@@ -378,7 +378,7 @@ export default function TeethWhitening() {
       ══════════════════════════════════ */}
       <section className="tw-reviews-section">
         <div className="tw-reviews-header sr">
-          <div>
+          <div className='tw-reviews-header-content-box'>
             <p className="sec-tag">5-Star Reviews</p>
             <h2 className="sec-h">
               What Albuquerque Patients<br /><em>Say About Our Practice</em>
@@ -606,7 +606,7 @@ export default function TeethWhitening() {
       ══════════════════════════════════ */}
       <section className="tw-reviews-section tw-reviews-section--warm">
         <div className="tw-reviews-header sr">
-          <div>
+          <div className='tw-reviews-header-content-box'>
             <p className="sec-tag">More Happy Patients</p>
             <h2 className="sec-h">
               "They Have Truly Changed<br /><em>My Life for the Better!"</em>
@@ -755,7 +755,7 @@ export default function TeethWhitening() {
       </section>
 
                         {/* ══════════════════════════════════
-          DR PANEL — ABOUT
+          DR PANEL — ABOUT 
       ══════════════════════════════════ */}
 
       <Doctorpanel />

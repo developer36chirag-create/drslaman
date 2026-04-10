@@ -3,6 +3,12 @@
 
 /* HERO */
 
+.cd-benefits-header, .cd-compare-header, .cd-why-header, .cd-treatments-header, .cd-candidacy-header, .cd-reviews-header-content-box, .cd-aftercare-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
 /* BENEFITS */
 .cd-benefits-section { background:var(--c-deep); padding:6rem; position:relative; overflow:hidden;
   /* background-image: url(/drslaman/public/healthy-food.png); */

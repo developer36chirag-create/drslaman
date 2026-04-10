@@ -5,6 +5,13 @@
    come from index.css / are already in project
 ══════════════════════════════════════════════ */
 
+.dr-edu-header, .dr-mems-left, .dr-beyond-header, .dr-reviews-header, .ba-left, .dr-services-header, .dr-cta-header  {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+
 /* ── HERO ─────────────────────────────────── */
 .dr-hero {
   display: grid;

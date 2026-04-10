@@ -212,7 +212,7 @@ export default function SmileMakeover() {
   return (
     <main>
 
-
+ 
         {/* ══════════════════════════════════
           S1 — HERO / BANNER
       ══════════════════════════════════ */}
@@ -413,7 +413,7 @@ export default function SmileMakeover() {
       ══════════════════════════════════ */}
       <section className="sm-reviews-section">
         <div className="sm-reviews-header sr">
-          <div>
+          <div className='sm-reviews-header-content-box'>
             <p className="sec-tag">Patient Reviews</p>
             <h2 className="sec-h">
               You Come First at Our<br /><em>Welcoming Dental Office</em>
@@ -669,7 +669,7 @@ export default function SmileMakeover() {
       ══════════════════════════════════ */}
       <section className="sm-reviews-section sm-reviews-section--warm">
         <div className="sm-reviews-header sr">
-          <div>
+          <div className='sm-reviews-header-content-box'>
             <p className="sec-tag">More Happy Patients</p>
             <h2 className="sec-h">
               Albuquerque Patients Are Happy<br /><em>to Visit Our Office</em>

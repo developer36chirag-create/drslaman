@@ -20,6 +20,7 @@ import Doctorpanel from "./components/Doctorpanel";
 import Smilemakeover from './pages/Smilemakeover'
 import Teethwhitening from './pages/Teethwhitening'
 import Veneers from './pages/Veneers'
+import Restorativedentistry from './pages/Restorativedentistry'
 
 import "./App.css";
 
@@ -88,6 +89,7 @@ export default function App() {
         <Route path="/services/smile-makeover"   element={<Smilemakeover />} />
         <Route path="/services/teeth-whitening"         element={<Teethwhitening />} />
         <Route path="/services/veneers"           element={<Veneers />} />
+        <Route path="/services/restorative-dentistry"          element={<Restorativedentistry />} />
       </Routes>
       {/* ✅ ROUTING ENDS HERE */}
 

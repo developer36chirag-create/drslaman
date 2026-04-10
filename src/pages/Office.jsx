@@ -9,7 +9,7 @@ import Doctorpanel from "../components/Doctorpanel";
    DATA
 ───────────────────────────────────────── */
 
-
+ 
 const BADGES = [
   { ico: '★', label: '5-Star Rated' },
   { ico: '✦', label: 'Since 1992' },
@@ -343,7 +343,7 @@ It was warm and friendly, you feel like you just made new friends that will quic
       ══════════════════════════════════ */}
       <section className="lo-benefits-section">
         <div className="lo-benefits-header sr">
-          <div>
+          <div className='lo-benefits-header-content-box'>
             <p className="sec-tag">Why Choose Us</p>
             <h2 className="sec-h">
               The Benefits of Our<br /><em>Dental Office</em>
@@ -553,7 +553,7 @@ It was warm and friendly, you feel like you just made new friends that will quic
       ══════════════════════════════════ */}
       <section className="lo-reviews-section">
         <div className="lo-reviews-header sr">
-          <div>
+          <div className='lo-reviews-header-content-box'>
             <p className="sec-tag">5-Star Reviews</p>
             <h2 className="sec-h">
               Albuquerque Continues to<br /><em>Rate Us 5 Stars</em>

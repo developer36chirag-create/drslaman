@@ -6,6 +6,12 @@
    sr-right, .visible) come from index.css
 ══════════════════════════════════════════════ */
 
+.gc-candidates-header-content-box, .gc-experience-header, .gc-laser-header, .gc-reviews-header-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
 /* ── S1 HERO ──────────────────────────────── */
 
 

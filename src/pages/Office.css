@@ -6,6 +6,14 @@
    sr-right, .visible) come from index.css
 ══════════════════════════════════════════════ */
 
+
+.lo-benefits-header-content-box, .lo-tech-header, .lo-featured-header, .lo-services-header, .lo-payment-header, .lo-reviews-header-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+
 /* ── S1 HERO ──────────────────────────────── */
 
 .ab-banner-section {

@@ -6,6 +6,13 @@
    sr-right, .visible) come from index.css
 ══════════════════════════════════════════════ */
 
+.db-advantages-header, .db-video-header, .db-reviews-header-content-box, .db-process-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+
 /* ── S1 HERO ──────────────────────────────── */
 
 

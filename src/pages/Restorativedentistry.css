@@ -1,0 +1,407 @@
+/* ══════════════════════════════════════════════
+   RESTORATIVE DENTISTRY PAGE
+   All classes prefixed with rd-
+   Shared: sec-tag, sec-h, sec-body, btn,
+   btn-fill, btn-line, sr, sr-left, sr-right,
+   .visible from index.css
+══════════════════════════════════════════════ */
+
+.rd-reviews-content-box, .rd-treatments-header, .rd-insurance-header  {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* ── S1 HERO ──────────────────────────────── */
+
+/* ── S2 WHAT IS ───────────────────────────── */
+
+.rd-what-section::before {
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--c-terra), var(--c-sand), var(--c-terra), transparent);
+}
+
+.rd-what-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 66vh;
+  overflow: hidden;
+      position: relative;
+      /* background-image: url(/drslaman/public/plan.png); */
+}
+
+.rd-what-copy {
+  padding: 6rem 5rem 6rem 6rem;
+  background: var(--c-warm);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.rd-what-pillars { display: flex; flex-direction: column; gap: .85rem; margin-top: .4rem; }
+.rd-what-pillar {
+  display: flex; gap: 1rem; align-items: flex-start;
+  background: var(--c-cream); border: 1px solid rgba(212,191,160,.3);
+  border-radius: var(--radius-md); padding: 1.1rem 1.3rem;
+  transition: transform .2s;
+}
+.rd-what-pillar:hover { transform: translateX(4px); }
+.rd-what-pillar-ico { font-size: 1.3rem; flex-shrink: 0; }
+.rd-what-pillar-ico img {
+  width: 40px;
+}
+.rd-what-pillar strong {
+  font-family: 'Cormorant Garamond', serif; font-size: 1rem;
+  font-weight: 600; color: var(--c-deep); display: block; margin-bottom: .2rem;
+}
+.rd-what-pillar p { font-size: .78rem; line-height: 1.62; color: var(--c-muted); }
+
+.rd-what-photo { position: relative; overflow: hidden;     padding: 6rem 5rem 6rem 6rem;
+    display: flex;
+    align-items: center; }
+.rd-what-photo img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(.82) saturate(.88); display: block;
+}
+.rd-what-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to left, transparent 48%, var(--c-warm) 100%);
+}
+.rd-what-badge {
+  position: absolute; top: 2.5rem; right: 2.5rem; z-index: 2;
+  background: rgba(26,14,8,.82); backdrop-filter: blur(12px);
+  border: 1px solid rgba(212,191,160,.2); border-radius: var(--radius-md);
+  padding: 1rem 1.4rem;
+}
+.rd-what-badge strong {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;
+  color: rgba(245,240,232,.9); display: block;
+}
+.rd-what-badge span { font-size: .6rem; letter-spacing: .14em; text-transform: uppercase; color: var(--c-sand); }
+
+/* ── S3 DR. SECTION ───────────────────────── */
+.rd-dr-section {
+  display: grid; grid-template-columns: 45% 55%;
+  min-height: 70vh; overflow: hidden; background: var(--c-deep);
+}
+
+.rd-dr-photo { position: relative; overflow: hidden; }
+.rd-dr-photo img {
+      width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center; filter: brightness(.78) saturate(.85); display: block; 
+}
+.rd-dr-photo-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, transparent 45%, rgba(28,14,8,.7) 100%);
+}
+.rd-dr-photo-badge {
+  position: absolute; top: 2.5rem; left: 2.5rem; z-index: 2;
+  background: rgba(26,14,8,.82); backdrop-filter: blur(12px);
+  border: 1px solid rgba(212,191,160,.2); border-radius: var(--radius-md);
+  padding: 1rem 1.4rem;
+}
+.rd-dr-photo-badge strong {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.05rem;
+  color: rgba(245,240,232,.9); display: block;
+}
+.rd-dr-photo-badge span { font-size: .6rem; letter-spacing: .14em; text-transform: uppercase; color: var(--c-sand); }
+
+.rd-dr-copy {
+  padding: 5.5rem 5.5rem 5.5rem 4rem;
+  display: flex; flex-direction: column; justify-content: center;
+  gap: 1.5rem; position: relative; z-index: 1;
+}
+.rd-dr-copy::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 80% 40%, rgba(160,89,58,.09) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.rd-dr-affiliations { display: flex; flex-direction: column; gap: .6rem; }
+.rd-dr-affil-label {
+  font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--c-terra); font-weight: 600;
+}
+.rd-dr-affil-pills { display: flex; flex-direction: column; gap: .4rem; }
+.rd-dr-affil-pill {
+  display: flex; align-items: center; gap: .6rem;
+  font-size: .8rem; color: rgba(245,240,232,.6);
+}
+.rd-dr-affil-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--c-terra); flex-shrink: 0;
+}
+
+.rd-dr-cta { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: .4rem; }
+.rd-dr-phone a {
+  font-family: 'Cormorant Garamond', serif; font-size: 2rem;
+  font-weight: 300; color: var(--c-sand); text-decoration: none;
+  letter-spacing: .04em; transition: color .2s;
+}
+.rd-dr-phone a:hover { color: var(--c-terra); }
+
+/* ── S4 REVIEWS ───────────────────────────── */
+.rd-reviews-section {
+  padding: 6rem; background: var(--c-cream);
+  position: relative; overflow: hidden;
+}
+.rd-reviews-section::before {
+  content: '"'; position: absolute; top: -2rem; right: 4rem;
+  font-family: 'Cormorant Garamond', serif; font-size: 22rem; font-weight: 700;
+  color: rgba(212,191,160,.07); line-height: 1; pointer-events: none; user-select: none;
+}
+.rd-reviews-header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  margin-bottom: 3rem; flex-wrap: wrap; gap: 2rem; position: relative; z-index: 1;
+}
+.rd-reviews-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; position: relative; z-index: 1; }
+.rd-review-card {
+  background: #fff; border: 1px solid rgba(212,191,160,.22);
+  border-radius: var(--radius-md); padding: 2.4rem 2.2rem;
+  position: relative; overflow: hidden; transition: box-shadow .3s, transform .3s;
+}
+.rd-review-card:hover { box-shadow: 0 12px 48px rgba(28,14,8,.08); transform: translateY(-3px); }
+.rd-review-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 0;
+  background: var(--c-terra); transition: height .4s ease;
+}
+.rd-review-card:hover::before { height: 100%; }
+.rd-review-stars { color: var(--c-terra); font-size: .9rem; letter-spacing: .1em; margin-bottom: 1rem; }
+.rd-review-text { font-size: .88rem; line-height: 1.85; color: var(--c-muted); font-style: italic; margin-bottom: 1.4rem; }
+.rd-review-person { display: flex; align-items: center; gap: .9rem; }
+.rd-review-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: linear-gradient(135deg, rgba(160,89,58,.2), rgba(212,191,160,.3));
+  border: 1px solid rgba(212,191,160,.35);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600;
+  color: var(--c-rust); flex-shrink: 0;
+}
+.rd-review-name { font-size: .82rem; font-weight: 600; color: var(--c-deep); }
+.rd-review-year { font-size: .68rem; color: rgba(107,90,80,.5); margin-top: .1rem; }
+.rd-review-via {
+  margin-left: auto; font-size: .58rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--c-terra); font-weight: 600;
+  border: 1px solid rgba(160,89,58,.2); border-radius: 2rem; padding: .25rem .7rem;
+}
+
+/* ── S5 TREATMENTS (alternating) ─────────── */
+.rd-treatments-section { background: var(--c-cream); overflow: hidden; }
+.rd-treatments-header { padding: 6rem 6rem 0; margin-bottom: 2rem; }
+.rd-treatments-list { display: flex; flex-direction: column; }
+
+.rd-treatment-item {
+  display: grid; grid-template-columns: 1fr 1fr;
+  min-height: 520px; overflow: hidden; position: relative;
+}
+.rd-treatment-item--reverse { direction: rtl; }
+.rd-treatment-item--reverse .rd-treatment-copy,
+.rd-treatment-item--reverse .rd-treatment-img { direction: ltr; }
+
+.rd-treatment-copy {
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 5rem 5.5rem; position: relative; background: var(--c-warm);
+}
+.rd-treatment-num {
+  font-family: 'Cormorant Garamond', serif; font-size: 6.5rem;
+  font-weight: 300; color: rgba(212,191,160,.14); line-height: 1;
+  position: absolute; top: 2.5rem; right: 3.5rem;
+  pointer-events: none; user-select: none;
+}
+.rd-treatment-tag {
+  display: inline-flex; align-items: center; gap: .55rem;
+  font-size: .6rem; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--c-terra); font-weight: 500; margin-bottom: .9rem;
+}
+.rd-treatment-tag-line { display: block; width: 1.5rem; height: 1px; background: var(--c-terra); flex-shrink: 0; }
+
+.rd-treatment-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  font-weight: 300; line-height: 1.1; color: var(--c-deep); margin-bottom: 1rem;
+}
+.rd-treatment-name em { font-style: italic; color: var(--c-terra); }
+
+.rd-treatment-body { font-size: .88rem; line-height: 1.78; color: var(--c-muted); margin-top: .5rem; }
+
+.rd-treatment-pills { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: 1.2rem; }
+.rd-treatment-pill {
+  background: rgba(160,89,58,.07); border: 1px solid rgba(160,89,58,.18);
+  border-radius: 2rem; padding: .28rem .85rem;
+  font-size: .68rem; color: var(--c-terra); font-weight: 500;
+}
+
+.rd-treatment-img { overflow: hidden; position: relative; }
+.rd-treatment-img img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: brightness(.88) saturate(.9);
+  transition: transform .6s ease, filter .4s;
+}
+.rd-treatment-item:hover .rd-treatment-img img {
+  transform: scale(1.04); filter: brightness(1) saturate(1);
+}
+
+/* ── S6 INSURANCE ─────────────────────────── */
+.rd-insurance-section {
+  padding: 6rem; background: var(--c-warm);
+  position: relative; overflow: hidden;
+}
+.rd-insurance-section::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent, var(--c-terra), var(--c-sand), var(--c-terra), transparent);
+}
+.rd-insurance-header { margin-bottom: 3.5rem; }
+.rd-insurance-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-bottom: 3rem;
+}
+.rd-insurance-card {
+  background: var(--c-cream); border: 1px solid rgba(212,191,160,.28);
+  border-radius: var(--radius-lg); padding: 2.4rem 2rem;
+  transition: transform .25s, box-shadow .25s;
+}
+.rd-insurance-card:hover { transform: translateY(-4px); box-shadow: 0 14px 48px rgba(28,14,8,.08); }
+.rd-insurance-ico { font-size: 1.8rem; margin-bottom: 1.1rem; }
+.rd-insurance-ico img {
+  width: 70px;
+}
+.rd-insurance-title {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;
+  font-weight: 600; color: var(--c-deep); margin-bottom: .5rem;
+}
+.rd-insurance-desc { font-size: .82rem; line-height: 1.75; color: var(--c-muted); }
+.rd-insurance-cta { display: flex; justify-content: center; }
+
+/* ── S7 DR. PANEL ─────────────────────────── */
+.rd-dr-panel {
+  background: var(--c-cream); padding: 5rem 6rem;
+  display: grid; grid-template-columns: 190px 1fr; gap: 3.5rem;
+  align-items: start; border-top: 1px solid rgba(212,191,160,.2);
+}
+.rd-dr-panel-img {
+  width: 190px; height: 215px; border-radius: var(--radius-md);
+  overflow: hidden; border: 3px solid rgba(212,191,160,.38);
+}
+.rd-dr-panel-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.rd-dr-panel-name { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 400; color: var(--c-deep); margin-bottom: .3rem; }
+.rd-dr-panel-spec { font-size: .75rem; color: var(--c-terra); letter-spacing: .07em; text-transform: uppercase; font-weight: 500; margin-bottom: 1rem; }
+.rd-dr-panel-mems { display: grid; grid-template-columns: repeat(2,1fr); gap: .35rem .8rem; margin: 1rem 0; }
+.rd-dr-panel-mem { display: flex; align-items: flex-start; gap: .5rem; font-size: .8rem; color: var(--c-muted); }
+.rd-dr-panel-mem-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--c-terra); flex-shrink: 0; margin-top: .35rem; }
+.rd-dr-panel-contact { font-size: .86rem; color: var(--c-muted); line-height: 1.7; margin-top: 1rem; }
+.rd-dr-panel-contact a { color: var(--c-terra); text-decoration: none; font-weight: 500; }
+.rd-dr-panel-contact a:hover { text-decoration: underline; }
+
+/* ── S8 CONTACT ───────────────────────────── */
+.rd-contact-section { display: grid; grid-template-columns: 1fr 1fr; min-height: 60vh; }
+.rd-contact-office {
+  padding: 5.5rem 5rem 5.5rem 6rem; background: var(--c-deep);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.rd-o-row { display: flex; gap: .9rem; align-items: flex-start; margin-bottom: 1.3rem; }
+.rd-o-ico { color: var(--c-terra); font-size: 1rem; flex-shrink: 0; margin-top: .12rem; }
+.rd-o-lbl { font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(245,240,232,.38); margin-bottom: .18rem; }
+.rd-o-val { font-size: .9rem; color: var(--c-cream); line-height: 1.5; }
+.rd-o-val a { color: var(--c-sand); text-decoration: none; }
+.rd-contact-btns { display: flex; flex-direction: column; gap: .65rem; margin-top: 2rem; align-items: flex-start; }
+.rd-o-btn { padding: .65rem 1.6rem; border-radius: 3rem; font-size: .8rem; font-weight: 500; text-decoration: none; letter-spacing: .04em; font-family: 'DM Sans', sans-serif; transition: all .2s; display: inline-block; }
+.rd-o-btn.fill { background: var(--c-terra); color: #fff; border: 1px solid var(--c-terra); }
+.rd-o-btn.fill:hover { background: var(--c-rust); }
+.rd-o-btn.ghost { color: var(--c-cream); border: 1px solid rgba(245,240,232,.22); }
+.rd-o-btn.ghost:hover { border-color: var(--c-sand); color: var(--c-sand); }
+.rd-contact-form-wrap { padding: 5rem; background: var(--c-warm); display: flex; flex-direction: column; justify-content: center; }
+.rd-contact-sub { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 300; color: var(--c-deep); margin-bottom: 1.6rem; }
+.rd-c-form { display: flex; flex-direction: column; gap: 1rem; }
+.rd-cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.rd-cf-field { display: flex; flex-direction: column; gap: .4rem; }
+.rd-cf-field label { font-size: .65rem; letter-spacing: .14em; text-transform: uppercase; color: var(--c-muted); font-weight: 500; }
+.rd-cf-field input,
+.rd-cf-field textarea {
+  background: #fff; border: 1px solid rgba(160,89,58,.28); border-radius: .55rem;
+  padding: .8rem 1rem; font-size: .87rem; font-family: 'DM Sans', sans-serif;
+  color: var(--c-deep); outline: none; transition: border-color .2s; resize: none;
+}
+.rd-cf-field input:focus, .rd-cf-field textarea:focus { border-color: var(--c-terra); }
+.rd-cf-submit {
+  background: var(--c-terra); color: #fff; border: none; border-radius: 3rem;
+  padding: .9rem 2.4rem; font-size: .88rem; font-weight: 500;
+  font-family: 'DM Sans', sans-serif; cursor: pointer; width: 100%;
+  transition: background .2s; margin-top: .4rem;
+}
+.rd-cf-submit:hover { background: var(--c-rust); }
+
+/* ── RATE BAR ─────────────────────────────── */
+.rd-rate-bar { background: var(--c-deep); padding: 3.5rem 6rem; text-align: center; }
+.rd-rate-bar h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.95rem; font-weight: 300; color: var(--c-cream); margin-bottom: 1.4rem; }
+.rd-rate-icons { display: flex; justify-content: center; gap: 1.4rem; }
+.rd-rate-ico {
+  width: 3rem; height: 3rem; border-radius: 50%;
+  border: 1px solid rgba(245,240,232,.18);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .82rem; font-weight: 600; color: var(--c-cream);
+  text-decoration: none; transition: border-color .2s, background .2s;
+}
+.rd-rate-ico:hover { border-color: var(--c-sand); background: rgba(245,240,232,.07); }
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media (max-width: 1100px) {
+  .rd-hero-inner { padding: 4rem 2.5rem 5rem; max-width: 100%; }
+  .rd-hero-stat { display: none; }
+
+  .rd-what-section,
+  .rd-dr-section,
+  .rd-contact-section { grid-template-columns: 1fr; }
+
+  .rd-what-photo,
+  .rd-dr-photo { min-height: 55vw; }
+  .rd-what-copy { padding: 4rem 2.5rem; }
+  .rd-dr-copy { padding: 4rem 2.5rem; }
+
+  .rd-what-photo {
+    padding: 3.5rem 1.3rem;
+    order: -1;
+  }
+
+  .rd-reviews-section,
+  .rd-insurance-section { padding: 4rem 2.5rem; }
+  .rd-reviews-grid { grid-template-columns: 1fr; }
+  .rd-insurance-grid { grid-template-columns: 1fr; }
+
+  .rd-treatments-header { padding: 4rem 2.5rem 0; }
+  .rd-treatment-item { grid-template-columns: 1fr; min-height: auto; }
+  .rd-treatment-item--reverse { direction: ltr; }
+  .rd-treatment-copy { padding: 3rem 2.5rem; }
+  .rd-treatment-img { min-height: 300px; }
+  .rd-treatment-item .rd-treatment-img { order: -1; }
+
+  .rd-dr-panel { grid-template-columns: 1fr; padding: 3.5rem 2.5rem; }
+  .rd-dr-panel-mems { grid-template-columns: 1fr; }
+
+  .rd-contact-office { padding: 3.5rem 2.5rem; }
+  .rd-contact-form-wrap { padding: 3.5rem 2.5rem; }
+  .rd-rate-bar { padding: 3rem 2rem; }
+}
+
+@media (max-width: 767px) {
+  .rd-hero-inner { padding: 3.5rem 1.3rem 4.5rem; }
+  .rd-what-copy,
+  .rd-dr-copy { padding: 3.5rem 1.3rem; }
+  .rd-reviews-section,
+  .rd-insurance-section { padding: 3.5rem 1.3rem; }
+  .rd-treatments-header { padding: 3.5rem 1.3rem 0; }
+  .rd-treatment-copy { padding: 2.5rem 1.3rem; }
+  .rd-contact-office,
+  .rd-contact-form-wrap { padding: 3.5rem 1.3rem; }
+  .rd-cf-row { grid-template-columns: 1fr; }
+  .rd-dr-panel { padding: 3.5rem 1.3rem; gap: 2rem; }
+  .rd-dr-panel-img { width: 100%; height: auto; }
+}

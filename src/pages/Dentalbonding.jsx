@@ -72,7 +72,7 @@ const PROCESS_STEPS = [
     desc: 'The final step is polishing the tooth and resin to achieve the most natural-looking, beautifully finished results possible.',
   },
 ];
-
+ 
 const DR_QUALITIES = [
   {
     img: "/medal-ribbon.png",
@@ -415,7 +415,7 @@ export default function DentalBonding() {
       ══════════════════════════════════ */}
       <section className="db-reviews-section">
         <div className="db-reviews-header sr">
-          <div>
+          <div className='db-reviews-header-content-box'>
             <p className="sec-tag">Patient Reviews</p>
             <h2 className="sec-h">
               "Hard to Beat<br /><em>in Albuquerque or Anywhere Else"</em>

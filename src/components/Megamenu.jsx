@@ -36,7 +36,7 @@ const COLS = [
   {
     title: 'Restorative Dentistry',
     links: [
-      { label: 'Restorative Dentistry', href: '#' },
+      { label: 'Restorative Dentistry', href: '/services/restorative-dentistry' },
       { label: 'Bone Graft', href: '#' },
       { label: 'Dental Bridges', href: '#' },
       { label: 'Dental Crowns', href: '#' },

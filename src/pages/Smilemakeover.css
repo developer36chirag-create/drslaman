@@ -6,6 +6,12 @@
    sr-right, .visible) come from index.css
 ══════════════════════════════════════════════ */
 
+.sm-why-header, .sm-concerns-copy, .sm-treatments-header, .sm-reviews-header-content-box, .sm-video-header, .sm-candidacy-header, .sm-timeline-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
 
 /* ── SHARED WRAP ──────────────────────────── */
 .sm-wrap { padding: 6rem; }

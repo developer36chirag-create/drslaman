@@ -77,7 +77,7 @@ export default function CosmeticDentistry() {
   useScrollReveal();
   return (
     <main>
-
+ 
 
         {/* ══════════════════════════════════
           S1 — HERO / BANNER
@@ -305,7 +305,7 @@ export default function CosmeticDentistry() {
       {/* S10 REVIEWS */}
       <section className="cd-reviews-section">
         <div className="cd-reviews-header sr">
-          <div><p className="sec-tag">"Look no further."</p><h2 className="sec-h">More Excellent Reviews<br /><em>For Our Albuquerque Practice</em></h2></div>
+          <div className='cd-reviews-header-content-box'><p className="sec-tag">"Look no further."</p><h2 className="sec-h">More Excellent Reviews<br /><em>For Our Albuquerque Practice</em></h2></div>
           <a href="https://maps.google.com/maps?cid=13452876912051634118" target="_blank" rel="noopener noreferrer" className="btn btn-line">View All on Google →</a>
         </div>
         <div className="cd-reviews-grid">

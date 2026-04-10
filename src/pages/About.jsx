@@ -77,7 +77,7 @@ const TEAM_MEMBERS = [
   { img: "/Lori.jpg",  name: 'Lori',            role: 'Dental Hygienist',        featured: false },
   { img: "/download-main.png", name: 'Dr. James Slaman',role: 'Lead Dentist, DDS, PC',  featured: true  },
 ];
-
+ 
 const DENTISTRY_LIST = [
   'American Dental Association',
   'Academy of General Dentistry',
@@ -211,7 +211,7 @@ export default function About() {
       ══════════════════════════════════ */}
       <section className="ab-visit-section">
         <div className="ab-visit-header">
-          <div className="sr">
+          <div className="sr ab-visit-header-content-box">
             <p className="sec-tag">Patient Comfort</p>
             <h2 className="sec-h">What to Expect During<br /><em>Your Visit</em></h2>
           </div>
@@ -311,7 +311,7 @@ export default function About() {
       ══════════════════════════════════ */}
       <section className="ab-reviews-section">
         <div className="ab-reviews-header sr">
-          <div>
+          <div className='ab-reviews-header-content-box'>
             <p className="sec-tag">Patient Reviews</p>
             <h2 className="sec-h">
               "Team Slaman Is Absolutely<br /><em>Top Notch!"</em>
@@ -349,7 +349,7 @@ export default function About() {
       ══════════════════════════════════ */}
       <section className="ab-technology-section" id="technology">
         <div className="ab-technology-header">
-          <div className="sr">
+          <div className="sr ab-technology-header-content-box">
             <p className="sec-tag" style={{ color: 'var(--c-sand)' }}>Cutting-Edge Technology</p>
             <h2 className="sec-h" style={{ color: '#fff' }}>
               More Effective,<br /><em style={{ color: 'var(--c-sand)' }}>Comfortable Care</em>
@@ -438,7 +438,7 @@ export default function About() {
       ══════════════════════════════════ */}
       <section className="ab-team-section">
         <div className="ab-team-header">
-          <div className="sr">
+          <div className="sr ab-team-header-content-box">
             <p className="sec-tag">Our People</p>
             <h2 className="sec-h">Meet Our<br /><em>Team</em></h2>
           </div>

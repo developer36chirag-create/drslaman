@@ -5,6 +5,12 @@
    sr-right, .visible) come from index.css
 ══════════════════════════════════════════════ */
 
+.ab-practice-header, .ab-visit-header-content-box, .ab-reviews-header-content-box, .ab-technology-header-content-box, .ab-treatments-header, .ab-team-header-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
 /* ── S1 BANNER / HERO ─────────────────────── */
 .ab-banner-section {
   display: grid;
