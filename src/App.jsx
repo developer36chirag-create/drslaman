@@ -23,6 +23,7 @@ import Veneers from './pages/Veneers'
 import Restorativedentistry from './pages/Restorativedentistry'
 import Bonegrafting from './pages/Bonegrafting'
 import Dentalbridges from './pages/Dentalbridges'
+import Dentalcrowns from './pages/Dentalcrowns'
 
 import "./App.css";
 
@@ -94,6 +95,7 @@ export default function App() {
         <Route path="/services/restorative-dentistry"          element={<Restorativedentistry />} />
         <Route path="/services/bone-grafting"        element={<Bonegrafting />} />
         <Route path="/services/dental-bridges"       element={<Dentalbridges />} />
+        <Route path="/services/dental-crowns"        element={<Dentalcrowns />} />
       </Routes>
       {/* ✅ ROUTING ENDS HERE */}
 

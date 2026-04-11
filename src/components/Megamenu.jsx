@@ -39,7 +39,7 @@ const COLS = [
       { label: 'Restorative Dentistry', href: '/services/restorative-dentistry' },
       { label: 'Bone Graft', href: '/services/bone-grafting' },
       { label: 'Dental Bridges', href: '/services/dental-bridges' },
-      { label: 'Dental Crowns', href: '#' },
+      { label: 'Dental Crowns', href: '/services/dental-crowns' },
       { label: 'CEREC', href: '#' },
       { label: 'Dental Implants', href: '#' },
       { label: 'Dentures', href: '#' },
