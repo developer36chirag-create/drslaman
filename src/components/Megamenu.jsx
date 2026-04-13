@@ -41,7 +41,7 @@ const COLS = [
       { label: 'Dental Bridges', href: '/services/dental-bridges' },
       { label: 'Dental Crowns', href: '/services/dental-crowns' },
       { label: 'CEREC', href: '/services/cerec' },
-      { label: 'Dental Implants', href: '#' },
+      { label: 'Dental Implants', href: '/services/dental-implants' },
       { label: 'Dentures', href: '#' },
       { label: 'Full Mouth Reconstruction', href: '#' },
       { label: 'Implant-Supported Bridges', href: '#' },
