@@ -24,6 +24,7 @@ import Restorativedentistry from './pages/Restorativedentistry'
 import Bonegrafting from './pages/Bonegrafting'
 import Dentalbridges from './pages/Dentalbridges'
 import Dentalcrowns from './pages/Dentalcrowns'
+import Cerec from './pages/Cerec'
 
 import "./App.css";
 
@@ -96,6 +97,7 @@ export default function App() {
         <Route path="/services/bone-grafting"        element={<Bonegrafting />} />
         <Route path="/services/dental-bridges"       element={<Dentalbridges />} />
         <Route path="/services/dental-crowns"        element={<Dentalcrowns />} />
+        <Route path="/services/cerec"                element={<Cerec />} />
       </Routes>
       {/* ✅ ROUTING ENDS HERE */}
 
